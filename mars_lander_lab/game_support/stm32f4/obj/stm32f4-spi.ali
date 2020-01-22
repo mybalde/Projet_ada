@@ -1,0 +1,221 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A --RTS=/home/mercier/opt/GNAT/2018-arm-elf/arm-eabi/lib/gnat/ravenscar-sfp-stm32f429disco/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatQ
+A -gnatw.X
+P DB ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U stm32f4.spi%b		stm32f4-spi.adb		128ecd36 NE OO PK IU
+Z interfaces%s		interfac.ads		interfac.ali
+W stm32f4%s		stm32f4.ads		stm32f4.ali
+W stm32f4.rcc%s		stm32f4-rcc.adb		stm32f4-rcc.ali
+
+U stm32f4.spi%s		stm32f4-spi.ads		7a00281e BN EE NE OO PK IU
+W stm32f4%s		stm32f4.ads		stm32f4.ali
+
+D interfac.ads		20180525200321 5ab55268 interfaces%s
+D stm32f4.ads		20190116083743 e24a28a6 stm32f4%s
+D stm32f4-rcc.ads	20190116083743 df5307c9 stm32f4.rcc%s
+D stm32f4-spi.ads	20190116083743 984a00b8 stm32f4.spi%s
+D stm32f4-spi.adb	20190116083743 5597ca47 stm32f4.spi%b
+D system.ads		20180525200320 aa7dab5a system%s
+D s-stoele.ads		20180525200321 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20180525200321 34867c83 system.unsigned_types%s
+X 1 interfac.ads
+63M9*Unsigned_8
+66M9*Unsigned_16
+X 2 stm32f4.ads
+35K9*STM32F4 147e12 4|31r9 195r5 5|28r6 28r23 30r14 242r5
+38M9*Half_Word<1|66M9> 4|62r29 73r51 75r43 176r21 178r21 180r21 181r21 182r21
+. 183r21 184r21 185r21 186r21 187r21 188r21 190r21 192r21 5|129r51 138r43
+. 149r19 158r20
+39M9*Byte<1|63M9> 4|78r51 80r43 5|147r51 156r43 158r14
+41M9*Bits_1 4|113r24 114r24 115r24 117r24 118r24 119r24 120r24 121r24 122r24
+. 123r24 124r24 125r24 126r24 130r33 131r33 132r33 133r33 134r33 135r33 136r33
+. 137r33 142r24 144r24 146r24 147r24 149r24 150r24 156r31 157r31
+42M9*Bits_2 4|143r24 145r24 148r24
+43M9*Bits_3 4|116r24 5|32r66
+44M9*Bits_4 4|151r24
+46M9*Bits_6 4|158r31
+47M9*Bits_7 4|171r29
+48M9*Bits_8 4|138r33 155r31
+X 3 stm32f4-rcc.ads
+35K17*RCC 844e16 5|28w14 28r31
+X 4 stm32f4-spi.ads
+31K17*SPI 2|35k9 4|112E9 195l13 195e16 5|30b22 242l13 242t16
+33R9*SPI_Port 65r39 67r36 69r37 71r29 73r34 75r26 78r34 80r26 83r33 86r33
+. 89r26 92r44 95r40 98r41 101r42 104r39 107r47 174c9 193e15 5|46r39 98r36
+. 109r37 120r29 129r34 138r26 147r34 156r26 165r33 174r33 183r26 192r44 201r40
+. 210r41 219r42 228r39 237r47
+35E9*SPI_Data_Direction 36e64 54r29
+36n7*D2Lines_FullDuplex{35E9} 5|60r15
+36n27*D2Lines_RxOnly{35E9} 5|64r15
+36n43*D1Line_Rx{35E9} 5|68r15
+36n54*D1Line_Tx{35E9} 5|72r15
+38E9*SPI_Data_Size 38e43 56r29
+38n27*Data_16{38E9} 5|78r52
+38n36*Data_8{38E9}
+40E9*SPI_Mode 40e36 55r29
+40n22*Master{40E9} 5|51r15
+40n30*Slave{40E9} 5|54r15
+42E9*SPI_CLock_Polarity 42e42 57r29
+42n32*High{42E9} 5|79r57
+42n38*Low{42E9}
+44E9*SPI_CLock_Phase 44e44 58r29
+44n29*P1Edge{44E9}
+44n37*P2Edge{44E9} 5|80r54
+46E9*SPI_Slave_Management 46e45 59r29
+46n34*Soft{46E9} 5|81r59
+46n40*Hard{46E9}
+48E9*SPI_Baud_Rate_Prescaler 49e69 60r29 5|32r38
+49n7*BRP_2{48E9} 5|33r7
+49n14*BRP_4{48E9} 5|34r7
+49n21*BRP_8{48E9} 5|35r7
+49n28*BRP_16{48E9} 5|36r7
+49n36*BRP_32{48E9} 5|37r7
+49n44*BRP_64{48E9} 5|38r7
+49n52*BRP_128{48E9} 5|39r7
+49n61*BRP_256{48E9} 5|40r7
+51E9*SPI_First_Bit 51e36 61r29
+51n27*MSB{51E9}
+51n32*LSB{51E9} 5|83r52
+53R9*SPI_Configuration 63e14 65r56 5|46r56
+54e7*Direction{35E9} 5|59r17
+55e7*Mode{40E9} 5|50r17
+56e7*Data_Size{38E9} 5|78r40
+57e7*Clock_Polarity{42E9} 5|79r40
+58e7*Clock_Phase{44E9} 5|80r40
+59e7*Slave_Management{46E9} 5|81r40
+60e7*Baud_Rate_Prescaler{48E9} 5|82r53
+61e7*First_Bit{51E9} 5|83r40
+62m7*CRC_Poly{2|38M9} 5|91r29
+65U14*Configure 65=25 65>49 5|46b14 92l8 92t17
+65r25 Port{33R9} 5|46b25 47r42 48r45 85m7 87r19 89m7 91m7
+65r49 Conf{53R9} 5|46b49 50r12 59r12 78r35 79r35 80r35 81r35 82r48 83r35
+. 91r24
+67U14*Enable 67=22 5|98b14 103l8 103t14
+67r22 Port{33R9} 5|98b22 99r39 102m7
+69U14*Disable 69=23 5|109b14 114l8 114t15
+69r23 Port{33R9} 5|109b23 110r39 113m7
+71V13*Enabled{boolean} 71>22 5|120b13 123l8 123t15
+71r22 Port{33R9} 5|120b22 122r14
+73U14*Send 73=20 73>44 5|129b14 132l8 132t12 149s7
+73r20 Port{33R9} 5|129b20 131m7
+73m44 Data{2|38M9} 5|129b44 131r20
+75V13*Data{2|38M9} 75>19 5|138b13 141l8 141t12 158s31
+75r19 Port{33R9} 5|138b19 140r14
+78U14*Send 78=20 78>44 5|147b14 150l8 150t12
+78r20 Port{33R9} 5|147b20 149m13
+78m44 Data{2|39M9} 5|147b44 149r30
+80V13*Data{2|39M9} 80>19 5|156b13 159l8 159t12
+80r19 Port{33R9} 5|156b19 158r37
+83V13*Rx_Is_Empty{boolean} 83>26 5|174b13 177l8 177t19
+83r26 Port{33R9} 5|174b26 176r18
+86V13*Tx_Is_Empty{boolean} 86>26 5|165b13 168l8 168t19
+86r26 Port{33R9} 5|165b26 167r14
+89V13*Busy{boolean} 89>19 5|183b13 186l8 186t12
+89r19 Port{33R9} 5|183b19 185r14
+92V13*Channel_Side_Indicated{boolean} 92>37 5|192b13 195l8 195t30
+92r37 Port{33R9} 5|192b37 194r14
+95V13*Underrun_Indicated{boolean} 95>33 5|201b13 204l8 204t26
+95r33 Port{33R9} 5|201b33 203r14
+98V13*CRC_Error_Indicated{boolean} 98>34 5|210b13 213l8 213t27
+98r34 Port{33R9} 5|210b34 212r14
+101V13*Mode_Fault_Indicated{boolean} 101>35 5|219b13 222l8 222t28
+101r35 Port{33R9} 5|219b35 221r14
+104V13*Overrun_Indicated{boolean} 104>32 5|228b13 231l8 231t25
+104r32 Port{33R9} 5|228b32 230r14
+107V13*Frame_Fmt_Error_Indicated{boolean} 107>40 5|237b13 240l8 240t33
+107r40 Port{33R9} 5|237b40 239r14
+112R9 SPI_Control_Register 127e15 175r21 5|47r18 99r15 110r15
+113m7*Clock_Phase{2|41M9} 5|80m13
+114m7*Clock_Polarity{2|41M9} 5|79m13
+115m7*Master_Select{2|41M9} 5|52m19 55m19
+116m7*Baud_Rate_Ctrl{2|43M9} 5|82m13
+117m7*SPI_Enable{2|41M9} 5|101m13 112m13 122r25
+118m7*LSB_First{2|41M9} 5|83m13
+119m7*Slave_Select{2|41M9} 5|53m19 56m19
+120m7*Soft_Slave_Mgt{2|41M9} 5|81m13
+121m7*RXOnly{2|41M9} 5|63m19 67m19 71m19 75m19
+122m7*Data_Frame_Fmt{2|41M9} 5|78m13
+123m7*CRC_Next{2|41M9}
+124m7*CRC_Enable{2|41M9}
+125m7*Output_BiDir{2|41M9} 5|62m19 66m19 70m19 74m19
+126m7*BiDir_Mode{2|41M9} 5|61m19 65m19 69m19 73m19
+129R9 SPI_Control_Register2 139e15 177r21
+130m7*RX_DMA_Enable{2|41M9}
+131m7*TX_DMA_Enable{2|41M9}
+132m7*SS_Out_Enable{2|41M9}
+133m7*Reserved_1{2|41M9}
+134m7*Frame_Fmt{2|41M9}
+135m7*Err_Int_Enable{2|41M9}
+136m7*RX_Not_Empty_Int_Enable{2|41M9}
+137m7*TX_Empty_Int_Enable{2|41M9}
+138m7*Reserved_2{2|48M9}
+141R9 SPI_I2S_Config_Register 152e15 189r21 5|48r18
+142m7*Channel_Length{2|41M9}
+143m7*Data_Length{2|42M9}
+144m7*Clock_Polarity{2|41M9}
+145m7*I2S_Standard{2|42M9}
+146m7*Reserved_1{2|41M9}
+147m7*PCM_Frame_Sync{2|41M9}
+148m7*Config_Mode{2|42M9}
+149m7*Enable{2|41M9}
+150m7*Mode_Select{2|41M9} 5|88m16
+151m7*Reserved_2{2|44M9}
+154R9 SPI_I2S_Prescale_Register 159e15 191r21
+155m7*Linear_Prescler{2|48M9}
+156m7*Odd_Factor{2|41M9}
+157m7*Master_CLK_Out_Enable{2|41M9}
+158m7*Reserved{2|46M9}
+161R9 SPI_Status_Register 172e15 179r21
+162b7*RX_Buffer_Not_Empty{boolean} 5|176r30
+163b7*TX_Buffer_Empty{boolean} 5|167r26
+164b7*Channel_Side{boolean} 5|194r26
+165b7*Underrun_Flag{boolean} 5|203r26
+166b7*CRC_Error_Flag{boolean} 5|212r26
+167b7*Mode_Fault{boolean} 5|221r26
+168b7*Overrun_Flag{boolean} 5|230r26
+169b7*Busy_Flag{boolean} 5|185r26
+170b7*Frame_Fmt_Error{boolean} 5|239r26
+171m7*Reserved{2|47M9}
+175r7*CTRL1{112R9} 5|47r47 85m12 99r44 102m12 110r44 113m12 122r19
+176m7*Reserved_1{2|38M9}
+177r7*CTRL2{129R9}
+178m7*Reserved_2{2|38M9}
+179r7*Status{161R9} 5|167r19 176r23 185r19 194r19 203r19 212r19 221r19 230r19
+. 239r19
+180m7*Reserved_3{2|38M9}
+181m7*Data{2|38M9} 5|131m12 140r19
+182m7*Reserved_4{2|38M9}
+183m7*CRC_Poly{2|38M9} 5|91m12
+184m7*Reserved_5{2|38M9}
+185m7*RX_CRC{2|38M9}
+186m7*Reserved_6{2|38M9}
+187m7*TX_CRC{2|38M9}
+188m7*Reserved_7{2|38M9}
+189r7*I2S_Conf{141R9} 5|48r50 87r24 89m12
+190m7*Reserved_8{2|38M9}
+191r7*I2S_PreScal{154R9}
+192m7*Reserved_9{2|38M9}
+X 5 stm32f4-spi.adb
+32a4 Baud_Rate_Value(2|43M9) 82r31
+47r7 CTRL1{4|112R9} 52m13 53m13 55m13 56m13 61m13 62m13 63m13 65m13 66m13
+. 67m13 69m13 70m13 71m13 73m13 74m13 75m13 78m7 79m7 80m7 81m7 82m7 83m7
+. 85r21
+48r7 I2S_Conf{4|141R9} 87m7 88m7 89r24
+99r7 CTRL1{4|112R9} 101m7 102r21
+110r7 CTRL1{4|112R9} 112m7 113r21
+

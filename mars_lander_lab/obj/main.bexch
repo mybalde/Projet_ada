@@ -1,0 +1,58 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\mars_lander.gpr
+20200122131044
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\game_support\stm32f4\stm32.gpr
+20200122131046
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\gnat_sdl.gpr
+20200122131050
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\game_support\game_support.gpr
+20200122131044
+[BOUND OBJECT FILES]
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\gl_gl_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\gl_glu_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\sdl_blendmode_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\sdl_error_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\sdl_scancode_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\stdarg_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\stddef_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\stdint_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\sdl_stdinc_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\sdl_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\sdl_joystick_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\sdl_keycode_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\sdl_keyboard_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\sdl_pixels_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\sdl_rect_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\sdl_rwops_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\sdl_surface_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\game_support\obj\display.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\game_support\obj\display-image.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\sdl_touch_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\sdl_gesture_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\sdl_events_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\sdl_video_h.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\game_support\obj\display-basic-utils.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\game_support\obj\display-basic-fonts.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\game_support\obj\display-basic-glfonts.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\game_support\obj\display-basic.o
+C:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\obj\
+-LC:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\obj\
+-LC:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\game_support\obj\
+-LC:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\gnat_sdl\obj\
+-LC:\Users\balde\Downloads\mars_lander_lab\mars_lander_lab\game_support\stm32f4\obj\
+-LC:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/libgnarl.a
+C:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads

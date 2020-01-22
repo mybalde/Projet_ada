@@ -1,0 +1,41 @@
+project GNAT_SDL is
+
+   type OS_Type is ("Windows", "Linux");
+   Host : OS_Type := external ("HOST", "Windows");
+
+   type SDL_Backend_Type is ("gnat_sdl2", "gnat_sdl");
+   SDL_Backend : SDL_Backend_Type := External ("sdl_backend", "gnat_sdl2");
+
+   type Test_Type is ("A", "B");
+   Test_Var : Test_Type := "A";
+  Test_Var2 := "A";
+
+
+   for Source_Dirs use (SDL_Backend & "/src");
+
+   for Object_Dir use "obj";
+   for Languages use ("Ada");
+
+   package Compiler is
+      for Default_Switches ("Ada") use ("-gnat12", "-O2");
+   end Compiler;
+
+   Link_Opts := ();
+   case Host is
+      when "Windows" =>
+         case SDL_Backend is
+            when "gnat_sdl" =>
+               Link_Opts := ("-lglu32", "-lopengl32", "-lSDL", "-lSDL_ttf");
+            when "gnat_sdl2" =>
+               Link_Opts := ("-lmingw32", "-lSDL2",  "-lopengl32" , "-lglu32");
+         end case;
+      when "Linux" =>
+         case SDL_Backend is
+            when "gnat_sdl" =>
+               Link_Opts := ("-lSDL", "-lSDL_ttf", "-lglut", "-lGL", "-lGLU");
+            when "gnat_sdl2" =>
+               Link_Opts := ("-lSDL2", "-lglut", "-lGL", "-lGLU");
+         end case;
+   end case;
+
+end GNAT_SDL;

@@ -1,0 +1,34 @@
+V "GNAT Lib v21.20200115"
+A -O0
+A -gnatA
+A -g
+A -gnatwa
+A -gnatQ
+A -gnatw.X
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U numerics%s		numerics.ads		e6cc409f EE OO PU PK
+Z system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20191018001527 76789da1 ada%s
+D a-unccon.ads		20191018001527 0e9b276f ada.unchecked_conversion%s
+D numerics.ads		20200114132237 e6cc409f numerics%s
+D system.ads		20200103010950 4635ec04 system%s
+D s-exctab.ads		20200103010950 54135002 system.exception_table%s
+D s-stalib.ads		20200103010950 09bd3940 system.standard_library%s
+G a e
+X 3 numerics.ads
+16K9*Numerics 32l5 32e13
+19X4*Argument_Error
+21N4*Pi 24r27
+24N4*["03C0"]
+29N4*e
+

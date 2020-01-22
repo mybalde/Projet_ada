@@ -1,0 +1,168 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A --RTS=/home/mercier/opt/GNAT/2018-arm-elf/arm-eabi/lib/gnat/ravenscar-sfp-stm32f429disco/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatQ
+A -gnatw.X
+P DB ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+
+U screen_interface%b	screen_interface.adb	166a82fa NE OO PK
+W stm32f4%s		stm32f4.ads		stm32f4.ali
+W stm32f4.touch_panel%s	stm32f4-touch_panel.adb	stm32f4-touch_panel.ali
+
+U screen_interface%s	screen_interface.ads	1b4e476f EE NE OO PK
+W stm32f4%s		stm32f4.ads		stm32f4.ali
+W stm32f4.lcd%s		stm32f4-lcd.adb		stm32f4-lcd.ali
+
+D ada.ads		20180525200322 76789da1 ada%s
+D a-reatim.ads		20180525200322 4c16970e ada.real_time%s
+D a-unccon.ads		20180525200322 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180525200321 5ab55268 interfaces%s
+D i-stm32.ads		20180525200320 2ad0960b interfaces.stm32%s
+D i-stm32-pwr.ads	20180525200320 4a098e84 interfaces.stm32.pwr%s
+D screen_interface.ads	20190116083743 df7f023b screen_interface%s
+D screen_interface.adb	20190116083743 dafc4a8b screen_interface%b
+D stm32f4.ads		20190116083743 e24a28a6 stm32f4%s
+D stm32f4-dma.ads	20190116083743 fd8211e5 stm32f4.dma%s
+D stm32f4-gpio.ads	20190116083743 b9006270 stm32f4.gpio%s
+D stm32f4-i2c.ads	20190116083743 bb6f6c68 stm32f4.i2c%s
+D stm32f4-lcd.ads	20190116083743 c4314554 stm32f4.lcd%s
+D stm32f4-rcc.ads	20190116083743 df5307c9 stm32f4.rcc%s
+D stm32f4-spi.ads	20190116083743 984a00b8 stm32f4.spi%s
+D stm32f4-timers.ads	20190116083743 477fe5ae stm32f4.timers%s
+D stm32f4-touch_panel.ads  20190116083743 f1a3e2ec stm32f4.touch_panel%s
+D stm32f4-usarts.ads	20190116083743 11302c53 stm32f4.usarts%s
+D stm32f429_discovery.ads  20190116083743 b3123381 stm32f429_discovery%s
+D system.ads		20180525200320 aa7dab5a system%s
+D s-bb.ads		20180525200321 09e072ae system.bb%s
+D s-bbbopa.ads		20180525200320 5e9af419 system.bb.board_parameters%s
+D s-bbbosu.ads		20180525200322 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20180525200320 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20180525200322 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20180525200320 b5961a30 system.bb.mcu_parameters%s
+D s-bbpara.ads		20180525200320 431abc17 system.bb.parameters%s
+D s-bbthre.ads		20180525200322 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20180525200322 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20180525200322 ad086247 system.bb.time%s
+D s-multip.ads		20180525200322 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20180525200322 229b14dd system.os_interface%s
+D s-stm32.ads		20180525200320 e898dba2 system.stm32%s
+D s-stoele.ads		20180525200321 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20180525200321 34867c83 system.unsigned_types%s
+X 4 interfac.ads
+66M9*Unsigned_16
+X 7 screen_interface.ads
+3K9*Screen_Interface 45l5 45e21 8|4b14 51l5 51t21
+4I12*Width{13|16I12} 9r11 14r11 40r48 40r60 8|35r48 35r60
+5I12*Height{13|17I12} 10r11 15r11 40r71 8|35r71
+7R9*Touch_State 11e14 37r36 8|12r36 13r12
+8b7*Touch_Detected{boolean} 8|18m10
+9i7*X{4I12} 8|19m10
+10i7*Y{5I12} 8|20m10
+13R9*Point 16e14 18r27 18r41 19r27 19r41 38r29 8|24r29
+14i7*X{4I12} 18r54 18r61 19r54 19r61 8|26r39
+15i7*Y{5I12} 18r67 18r74 19r67 19r74 8|26r44
+18V14*"+"{13R9} 18>18 18>22
+18r18 P1{13R9} 18r51 18r64
+18r22 P2{13R9} 18r58 18r71
+19V14*"-"{13R9} 19>18 19>22
+19r18 P1{13R9} 19r51 19r64
+19r22 P2{13R9} 19r58 19r71
+21M12*Color{13|19M12} 23r17 24r17 25r17 26r17 27r17 28r17 29r17 30r17 31r17
+. 32r17 33r17 34r17 38r42 39r33 40r37 43r55 8|24r42 29r33 35r37 42r55 48r10
+. 48r36 48r60
+23m4*Black=23:43{13|19M12}
+24m4*White=24:43{13|19M12}
+25m4*Red=25:43{13|19M12}
+26m4*Green=26:43{13|19M12}
+27m4*Blue=27:43{13|19M12}
+28m4*Gray=28:43{13|19M12}
+29m4*Light_Gray=29:43{13|19M12}
+30m4*Sky_Blue=30:43{13|19M12}
+31m4*Yellow=31:43{13|19M12}
+32m4*Orange=32:43{13|19M12}
+33m4*Pink=33:43{13|19M12}
+34m4*Violet=34:43{13|19M12}
+36U14*Initialize 8|5b14 10t7
+37V13*Get_Touch_State{7R9} 8|12b13 22t7
+38U14*Set_Pixel 38>25 38>36 38>49 8|24b14 27t7
+38r25 P{13R9} 8|24b25 26r37 26r42
+38m36 Col{21M12} 8|24b36 26r47
+38e49 Layer{13|14E9} 8|24b49 26r30
+39U14*Fill_Screen 39>27 39>40 8|29b14 33l8 33t19
+39m27 Col{21M12} 8|29b27 32r28
+39e40 Layer{13|14E9} 8|29b40 30r66
+40U14*Fast_Horiz_Line 40>31 40>44 40>55 40>67 40>79 8|35b14 39l8 39t23
+40m31 Col{21M12} 8|35b31 38r123
+40i44 X1{4I12} 8|35b44 38r33
+40i55 X2{4I12} 8|35b55 38r81
+40i67 Y{5I12} 8|35b67 38r38 38r86
+40e79 Layer{13|14E9} 8|35b79 36r66
+42I9*RGB_Value<integer> 43r37 8|42r37
+43V13*RGB_To_Color{21M12} 43>27 43>30 43>33 8|42b13 49l8 49t20
+43i27 R{42I9} 8|42b27 43r38
+43i30 G{42I9} 8|42b30 44r38
+43i33 B{42I9} 8|42b33 45r38
+X 8 screen_interface.adb
+13r7 TS{7|7R9} 18m7 19m7 20m7 21r14
+14r7 ST_TS{17|9R9} 16m6 18r28 19r15 20r15
+30p7 FB{13|56P9} 32r7
+36p7 FB{13|56P9} 38r7
+43f7 RF{float} 48r17
+44f7 GF{float} 48r43
+45f7 BF{float} 48r67
+X 9 stm32f4.ads
+35K9*STM32F4 7|1r6 1r23 4r21 5r22 21r21 23r31 24r31 25r31 26r31 27r31 28r31
+. 29r31 30r31 31r31 32r31 33r31 34r31 8|1r6 2w6 2r19 7r7 8r7 9r7 14r15 16r15
+. 26r7 9|147e12
+38M9*Half_Word<4|66M9>
+X 13 stm32f4-lcd.ads
+9K17*LCD 7|1w14 1r31 4r29 5r30 21r29 23r39 24r39 25r39 26r39 27r39 28r39
+. 29r39 30r39 31r39 32r39 33r39 34r39 8|7r15 8r15 26r15 13|420e16
+11N4*LCD_PIXEL_WIDTH 8|38r42 38r90
+14E9*LCD_Layer 7|38r57 39r48 40r87 8|24r57 29r48 35r87 13|14e38
+14n23*Layer1{14E9} 7|38r70 39r61 40r100 8|24r70 29r61 35r100
+16I12*Width{natural} 7|4r33
+17I12*Height{natural} 7|5r34
+19M12*Pixel{9|38M9} 7|21r33
+37m4*Black{19M12} 7|23r43
+38m4*White{19M12} 7|24r43
+39m4*Red{19M12} 7|25r43
+40m4*Green{19M12} 7|26r43
+41m4*Blue{19M12} 7|27r43
+42m4*Gray{19M12} 7|28r43
+43m4*Light_Gray{19M12} 7|29r43
+44m4*Sky_Blue{19M12} 7|30r43
+45m4*Yellow{19M12} 7|31r43
+46m4*Orange{19M12} 7|32r43
+47m4*Pink{19M12} 7|33r43
+48m4*Violet{19M12} 7|34r43
+50I9*Frame_Buffer_Range<integer> 8|38r14 38r62
+53A9*Frame_Buffer(19M12)<50I9>
+56P9*Frame_Buffer_Access(53A9) 8|30r21 36r21
+76U14*Initialize 8|7s19
+84U14*Set_Background 8|8s19
+90V13*Current_Frame_Buffer{56P9} 8|30s44 36s44
+94U14*Set_Pixel 8|26s19
+X 17 stm32f4-touch_panel.ads
+7K17*Touch_Panel 8|1w14 9r15 14r23 16r23 17|103e24
+9R9*TP_State 8|14r35 17|14e14
+10b7*Touch_Detected{boolean} 8|18r34
+11i7*X{13|16I12} 8|19r21
+12i7*Y{13|17I12} 8|20r21
+16U14*Initialize 8|9s27
+18V13*Current_State{9R9} 8|16s35
+

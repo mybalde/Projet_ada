@@ -1,0 +1,50 @@
+V "GNAT Lib v2018"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_LONG_LONG_INTEGERS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U stddef_h%s		stddef_h.ads		d5eeb931 NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.extensions%s  i-cexten.ads	i-cexten.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-c.ads		20180524051736 5421119b interfaces.c%s
+D i-cexten.ads		20180524051736 47f3eec4 interfaces.c.extensions%s
+D stddef_h.ads		20200122131052 f49cc756 stddef_h%s
+D system.ads		20180524051738 32a08138 system%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+X 3 interfac.ads
+38K9*Interfaces 184e15 6|4r6 4r24 5r6
+X 4 i-c.ads
+18K20*C 230e17 6|4w17 4r35 5r17
+66F9*long_double<long_long_float> 6|133r33
+X 5 i-cexten.ads
+37K22*Extensions 468e28 6|5w19 84r22
+65M9*unsigned_long_long 6|84r33
+X 6 stddef_h.ads
+8K9*stddef_h 145l5 145e13
+75I12*ptrdiff_t{long_long_integer}
+84M12*size_t{5|65M9}
+131R9*max_align_t 134e14 135r39
+132i7*uu_max_align_ll{long_long_integer}
+133f7*uu_max_align_ld{4|66F9}
+143M12*nullptr_t{7|67M9}
+X 7 system.ads
+37K9*System 6|6w6 143r25 7|200e11
+67M9*Address 6|143r32
+

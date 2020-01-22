@@ -1,0 +1,78 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A -g
+A -gnatwa
+A -gnatQ
+A -gnatw.X
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U stm32.rng%b		stm32-rng.adb		f5b5b2be NE OO PK IU
+W stm32%s		stm32.ads		stm32.ali
+W stm32_svd%s		stm32_svd.ads		stm32_svd.ali
+W stm32_svd.rcc%s	stm32_svd-rcc.ads	stm32_svd-rcc.ali
+W stm32_svd.rng%s	stm32_svd-rng.ads	stm32_svd-rng.ali
+
+U stm32.rng%s		stm32-rng.ads		47579ec4 EE NE OO PK IU
+W stm32%s		stm32.ads		stm32.ali
+
+D interfac.ads		20180525052300 5ab55268 interfaces%s
+D stm32.ads		20190201104611 a457c21a stm32%s
+D stm32-rng.ads		20190130140724 e3005cde stm32.rng%s
+D stm32-rng.adb		20190130140724 00ae2304 stm32.rng%b
+D stm32_hal.ads		20190201104611 53e550ba stm32_hal%s
+D stm32_svd.ads		20190130140724 89b9f11a stm32_svd%s
+D stm32_svd-rcc.ads	20190201104611 bb8137a6 stm32_svd.rcc%s
+D stm32_svd-rng.ads	20190201104611 ad9afac2 stm32_svd.rng%s
+D system.ads		20180525052301 4635ec04 system%s
+D s-unstyp.ads		20180525052301 34867c83 system.unsigned_types%s
+X 1 interfac.ads
+74M9*Unsigned_32
+X 2 stm32.ads
+39K9*STM32 48e10 3|7r9 37r5 4|4r14 124r5
+X 3 stm32-rng.ads
+7K15*RNG 2|39k9 3|37l11 37e14 4|4b20 124l11 124t14
+9U14*Enable_RNG 4|19b14 22l8 22t18
+11U14*Disable_RNG 4|28b14 31l8 31t19
+13U14*Reset_RNG 4|37b14 42l8 42t17
+15U14*Enable_RNG_Clock 4|10b14 13l8 13t24
+17V13*RNG_Enabled{boolean} 4|48b13
+19U14*Enable_RNG_Interrupt 4|55b14 58l8 58t28
+21U14*Disable_RNG_Interrupt 4|64b14 67l8 67t29
+23V13*RNG_Interrupt_Enabled{boolean} 4|73b13
+25V13*RNG_Data{5|97M9} 4|80b13
+27V13*RNG_Data_Ready{boolean} 4|87b13
+29V13*RNG_Seed_Error_Status{boolean} 4|94b13
+31V13*RNG_Clock_Error_Status{boolean} 4|101b13
+33U14*Clear_RNG_Seed_Error_Status 4|108b14 112l8 112t35
+35U14*Clear_RNG_Clock_Error_Status 4|118b14 122l8 122t36
+X 5 stm32_hal.ads
+97M9*UInt32<1|74M9> 3|25r29 4|80r29
+X 6 stm32_svd.ads
+10K9*STM32_SVD 4|1r6 1r25 2r6 2r25 6|184e14
+X 7 stm32_svd-rcc.ads
+10K19*RCC 4|1w16 1r35 7|1530e18
+361b7*RNGRST{boolean} 4|40m27 41m27
+670b7*RNGEN{boolean} 4|12m26
+1456r7*AHB2RSTR{355R9} 4|40m18 41m18
+1466r7*AHB2ENR{664R9} 4|12m18
+1527r4*RCC_Periph{1444R9} 4|12m7 40m7 41m7
+X 8 stm32_svd-rng.ads
+10K19*RNG 4|2w16 2r35 8|93e18
+22b7*RNGEN{boolean} 4|21m21 30m21 49r22
+24b7*IE{boolean} 4|57m21 66m21 74r22
+41b7*DRDY{boolean} 4|88r24
+43b7*CECS{boolean} 4|102r22 121m21
+45b7*SECS{boolean} 4|95r22 111m21
+75r7*CR{18R9} 4|21m18 30m18 49r19 57m18 66m18 74r19
+77r7*SR{39R9} 4|88r21 95r19 102r19 111m18 121m18
+79m7*DR{5|97M9} 4|81r21
+90r4*RNG_Periph{73R9} 4|21m7 30m7 49r8 57m7 66m7 74r8 81r10 88r10 95r8 102r8
+. 111m7 121m7
+

@@ -1,0 +1,78 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A -gnat12
+A -g
+A -gnatQ
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U display%s		display.ads		d23c0bd2 EE OO PK
+W sdl_surface_h%s	sdl_surface_h.ads	sdl_surface_h.ali
+W system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D display.ads		20200122131044 3a88167c display%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-c.ads		20180524051736 5421119b interfaces.c%s
+D i-cexten.ads		20180524051736 47f3eec4 interfaces.c.extensions%s
+D i-cstrin.ads		20180524051736 341d0ddf interfaces.c.strings%s
+D sdl_blendmode_h.ads	20200122131052 e308a3b6 sdl_blendmode_h%s
+D sdl_pixels_h.ads	20200122131052 89492fa8 sdl_pixels_h%s
+D sdl_rect_h.ads	20200122131054 5db03fa9 sdl_rect_h%s
+D sdl_rwops_h.ads	20200122131052 d60b2061 sdl_rwops_h%s
+D sdl_stdinc_h.ads	20200122131052 76b5d89f sdl_stdinc_h%s
+D sdl_surface_h.ads	20200122131054 da149c96 sdl_surface_h%s
+D stdarg_h.ads		20200122131054 db698406 stdarg_h%s
+D stddef_h.ads		20200122131052 f49cc756 stddef_h%s
+D stdint_h.ads		20200122131052 376ae00b stdint_h%s
+D system.ads		20180524051738 32a08138 system%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+X 3 display.ads
+23K9*Display 59l5 59e12
+25M9*Color_Component_T 28r11 29r11 30r11 31r11
+27R9*RGBA_T 32e15 34r18 35r12 36r12 37r11 38r12 39r10 40r11 41r14 42r13 43r11
+. 45r71
+28m7*R{25M9} 34m30 35m24 36m24 37m23 38m24 39m22 40m23 41m26 42m25 43m23
+29m7*G{25M9} 34m38 35m32 36m34 37m31 38m32 39m32 40m31 41m36 42m35 43m33
+30m7*B{25M9} 34m46 35m40 36m44 37m39 38m42 39m40 40m41 41m44 42m45 43m43
+31m7*A{25M9} 34m54 35m48 36m54 37m49 38m50 39m48 40m51 41m54 42m53 43m53
+34r4*Transparent{27R9}
+35r4*Black{27R9}
+36r4*White{27R9}
+37r4*Blue{27R9}
+38r4*Green{27R9}
+39r4*Red{27R9}
+40r4*Cyan{27R9}
+41r4*Magenta{27R9}
+42r4*Yellow{27R9}
+43r4*Gray{27R9}
+45A9*RGBA_Array(27R9)<integer><integer> 46r27
+46P9*Image_T(45A9)
+48X4*Display_Error
+50E9*Button_Type 50e37 54r16
+50n25*Left{50E9}
+50n31*Right{50E9} 57r74
+52R9*Mouse_Position 55e14 57r33
+53f7*X{float}
+53f10*Y{float}
+54e7*Button{50E9}
+57r4*No_Mouse_Position{52R9}
+X 13 sdl_surface_h.ads
+12K9*SDL_surface_h 3|21w6 21r25 13|667e18
+X 17 system.ads
+37K9*System 3|20w6 17|200e11
+

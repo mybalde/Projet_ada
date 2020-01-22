@@ -1,0 +1,32 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A -g
+A -gnatwa
+A -gnatQ
+A -gnatw.X
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U stm32%s		stm32.ads		ad07c0c8 NE OO PU PK IU
+W interfaces%s		interfac.ads		interfac.ali
+W stm32_hal%s		stm32_hal.ads		stm32_hal.ali
+
+D interfac.ads		20180525052300 5ab55268 interfaces%s
+D stm32.ads		20190201104611 a457c21a stm32%s
+D stm32_hal.ads		20190201104611 53e550ba stm32_hal%s
+D system.ads		20180525052301 4635ec04 system%s
+X 1 interfac.ads
+38K9*Interfaces 184e15 2|35w6 35r36
+X 2 stm32.ads
+39K9*STM32 46E9 48l5 48e10
+42M9*GPIO_Alternate_Function<3|43M9> 46c9
+X 3 stm32_hal.ads
+34K9*STM32_HAL 2|36w6 36r25 3|166e14
+43M9*UInt4 2|46r40
+

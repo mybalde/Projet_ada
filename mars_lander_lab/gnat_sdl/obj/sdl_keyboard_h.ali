@@ -1,0 +1,109 @@
+V "GNAT Lib v2018"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sdl_keyboard_h%s	sdl_keyboard_h.ads	40f2cc6f NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W sdl_keycode_h%s	sdl_keycode_h.ads	sdl_keycode_h.ali
+Y sdl_rect_h%s		sdl_rect_h.ads		sdl_rect_h.ali
+W sdl_scancode_h%s	sdl_scancode_h.ads	sdl_scancode_h.ali
+W sdl_stdinc_h%s	sdl_stdinc_h.ads	sdl_stdinc_h.ali
+Y sdl_video_h%s		sdl_video_h.ads		sdl_video_h.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-c.ads		20180524051736 5421119b interfaces.c%s
+D i-cexten.ads		20180524051736 47f3eec4 interfaces.c.extensions%s
+D i-cstrin.ads		20180524051736 341d0ddf interfaces.c.strings%s
+D sdl_keyboard_h.ads	20200122131054 0abc0312 sdl_keyboard_h%s
+D sdl_keycode_h.ads	20200122131052 a4e5a12f sdl_keycode_h%s
+D sdl_rect_h.ads	20200122131054 5db03fa9 sdl_rect_h%s
+D sdl_scancode_h.ads	20200122131054 a5b53f38 sdl_scancode_h%s
+D sdl_stdinc_h.ads	20200122131052 76b5d89f sdl_stdinc_h%s
+D sdl_video_h.ads	20200122131054 0027aa18 sdl_video_h%s
+D stdarg_h.ads		20200122131054 db698406 stdarg_h%s
+D stddef_h.ads		20200122131052 f49cc756 stddef_h%s
+D stdint_h.ads		20200122131052 376ae00b stdint_h%s
+D system.ads		20180524051738 32a08138 system%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+X 3 interfac.ads
+38K9*Interfaces 184e15 7|4r6 4r24 9r6 132r81 143r45 157r69 168r40
+X 4 i-c.ads
+18K20*C 230e17 7|4w17 4r35 9r17 132r92 143r56 157r80 168r51
+35I9*int<integer> 7|79r52
+43M9*unsigned
+44M9*unsigned_short
+47M9*unsigned_char
+X 6 i-cstrin.ads
+36K22*Strings 106e25 7|9w19 132r94 143r58 157r82 168r53
+47P9*chars_ptr 7|132r102 143r66 157r90 168r61
+X 7 sdl_keyboard_h.ads
+12K9*SDL_keyboard_h 242l5 242e19
+45R9*SDL_Keysym 50e14 51r39
+46m7*scancode{10|181M12}
+47i7*sym{8|52I12}
+48m7*c_mod{11|163M12}
+49m7*unused{11|175M12}
+60V13*SDL_GetKeyboardFocus 61b<c,SDL_GetKeyboardFocus>22
+79V13*SDL_GetKeyboardState(11|151M12) 79^35 80b<c,SDL_GetKeyboardState>22
+79p35 numkeys(4|35I9)
+86V13*SDL_GetModState{8|61M12} 87b<c,SDL_GetModState>22
+95U14*SDL_SetModState 95>31 96b<c,SDL_SetModState>22
+95m31 modstate{8|61M12}
+107V13*SDL_GetKeyFromScancode{8|52I12} 107>37 108b<c,SDL_GetKeyFromScancode>22
+107m37 scancode{10|181M12}
+119V13*SDL_GetScancodeFromKey{10|181M12} 119>37 120b<c,SDL_GetScancodeFromKey>22
+119i37 key{8|52I12}
+132V13*SDL_GetScancodeName{6|47P9} 132>34 133b<c,SDL_GetScancodeName>22
+132m34 scancode{10|181M12}
+143V13*SDL_GetScancodeFromName{10|181M12} 143>38 144b<c,SDL_GetScancodeFromName>22
+143p38 name{6|47P9}
+157V13*SDL_GetKeyName{6|47P9} 157>29 158b<c,SDL_GetKeyName>22
+157i29 key{8|52I12}
+168V13*SDL_GetKeyFromName{8|52I12} 168>33 169b<c,SDL_GetKeyFromName>22
+168p33 name{6|47P9}
+180U14*SDL_StartTextInput 181b<c,SDL_StartTextInput>22
+190V13*SDL_IsTextInputActive{11|136E9} 191b<c,SDL_IsTextInputActive>22
+201U14*SDL_StopTextInput 202b<c,SDL_StopTextInput>22
+211U14*SDL_SetTextInputRect 211^36 212b<c,SDL_SetTextInputRect>22
+211p36 rect
+224V13*SDL_HasScreenKeyboardSupport{11|136E9} 225b<c,SDL_HasScreenKeyboardSupport>22
+237V13*SDL_IsScreenKeyboardShown{11|136E9} 237^40 238b<c,SDL_IsScreenKeyboardShown>22
+237p40 window
+X 8 sdl_keycode_h.ads
+7K9*SDL_keycode_h 7|6w6 47r21 86r36 95r42 107r84 119r43 157r35 168r79 8|77e18
+52I12*SDL_Keycode{11|169I12} 7|47r35 107r98 119r57 157r49 168r93
+61M12*SDL_Keymod{4|43M9} 7|86r50 95r56
+X 9 sdl_rect_h.ads
+7K9 SDL_rect_h 7|211r50
+X 10 sdl_scancode_h.ads
+6K9*SDL_scancode_h 7|5w6 46r26 107r48 119r77 132r45 143r84 10|428e19
+181M12*SDL_Scancode{4|43M9} 7|46r41 107r63 119r92 132r60 143r99
+X 11 sdl_stdinc_h.ads
+11K9*SDL_stdinc_h 7|7w6 48r23 49r24 79r71 190r42 224r49 237r87 11|684e17
+136E9*SDL_bool 7|190r55 224r62 237r100 11|138e16
+151M12*Uint8{15|107M12} 7|79r84
+163M12*Uint16{15|111M12} 7|48r36
+169I12*Sint32{15|113I12}
+175M12*Uint32{15|115M12} 7|49r37
+X 12 sdl_video_h.ads
+11K9 SDL_video_h 7|60r48 237r56
+X 15 stdint_h.ads
+107M12*uint8_t{4|47M9}
+111M12*uint16_t{4|44M9}
+113I12*int32_t{4|35I9}
+

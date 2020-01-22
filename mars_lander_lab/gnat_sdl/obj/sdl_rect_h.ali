@@ -1,0 +1,84 @@
+V "GNAT Lib v2018"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sdl_rect_h%s		sdl_rect_h.ads		7f24f6ad NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W sdl_stdinc_h%s	sdl_stdinc_h.ads	sdl_stdinc_h.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-c.ads		20180524051736 5421119b interfaces.c%s
+D i-cexten.ads		20180524051736 47f3eec4 interfaces.c.extensions%s
+D i-cstrin.ads		20180524051736 341d0ddf interfaces.c.strings%s
+D sdl_rect_h.ads	20200122131054 5db03fa9 sdl_rect_h%s
+D sdl_stdinc_h.ads	20200122131052 76b5d89f sdl_stdinc_h%s
+D stdarg_h.ads		20200122131054 db698406 stdarg_h%s
+D stddef_h.ads		20200122131052 f49cc756 stddef_h%s
+D stdint_h.ads		20200122131052 376ae00b stdint_h%s
+D system.ads		20180524051738 32a08138 system%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+X 3 interfac.ads
+38K9*Interfaces 184e15 7|4r6 4r24
+X 4 i-c.ads
+18K20*C 230e17 7|4w17 4r35
+35I9*int<integer> 7|41r19 42r19 58r19 59r19 60r19 61r19 125r15 138r19 139r19
+. 140r19 141r19
+X 7 sdl_rect_h.ads
+7K9*SDL_rect_h 146l5 146e15
+40R9*SDL_Point 43e14 44r39 69r50 124r32
+41i7*x{4|35I9}
+42i7*y{4|35I9}
+57R9*SDL_Rect 62e14 63r39 69r81 76r48 83r49 83r79 92r54 92r84 102r27 103r27
+. 104r23 112r27 113r27 114r23 126r30 127r23 137r30
+58i7*x{4|35I9}
+59i7*y{4|35I9}
+60i7*w{4|35I9}
+61i7*h{4|35I9}
+69V13*SDL_PointInRect{8|136E9} 69^30 69^61 70b<c,SDL_PointInRect>22
+69p30 p(40R9)
+69p61 r(57R9)
+76V13*SDL_RectEmpty{8|136E9} 76^28 77b<c,SDL_RectEmpty>22
+76p28 r(57R9)
+83V13*SDL_RectEquals{8|136E9} 83^29 83^59 84b<c,SDL_RectEquals>22
+83p29 a(57R9)
+83p59 b(57R9)
+92V13*SDL_HasIntersection{8|136E9} 92^34 92^64 93b<c,SDL_HasIntersection>22
+92p34 A(57R9)
+92p64 B(57R9)
+101V13*SDL_IntersectRect{8|136E9} 102^7 103^7 104^7 105b<c,SDL_IntersectRect>22
+102p7 A(57R9)
+103p7 B(57R9)
+104p7 result(57R9)
+111U14*SDL_UnionRect 112^7 113^7 114^7 115b<c,SDL_UnionRect>22
+112p7 A(57R9)
+113p7 B(57R9)
+114p7 result(57R9)
+123V13*SDL_EnclosePoints{8|136E9} 124^7 125>7 126^7 127^7 128b<c,SDL_EnclosePoints>22
+124p7 points(40R9)
+125i7 count{4|35I9}
+126p7 clip(57R9)
+127p7 result(57R9)
+136V13*SDL_IntersectRectAndLine{8|136E9} 137^7 138^7 139^7 140^7 141^7 142b<c,SDL_IntersectRectAndLine>22
+137p7 rect(57R9)
+138p7 X1(4|35I9)
+139p7 Y1(4|35I9)
+140p7 X2(4|35I9)
+141p7 Y2(4|35I9)
+X 8 sdl_stdinc_h.ads
+11K9*SDL_stdinc_h 7|5w6 69r98 76r65 83r96 92r101 104r40 127r40 141r31 8|684e17
+136E9*SDL_bool 7|69r111 76r78 83r109 92r114 104r53 127r53 141r44 8|138e16
+

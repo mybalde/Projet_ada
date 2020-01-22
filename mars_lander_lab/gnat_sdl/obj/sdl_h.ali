@@ -1,0 +1,64 @@
+V "GNAT Lib v2018"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sdl_h%s		sdl_h.ads		5c9e3cb7 NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W sdl_stdinc_h%s	sdl_stdinc_h.ads	sdl_stdinc_h.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-c.ads		20180524051736 5421119b interfaces.c%s
+D i-cexten.ads		20180524051736 47f3eec4 interfaces.c.extensions%s
+D i-cstrin.ads		20180524051736 341d0ddf interfaces.c.strings%s
+D sdl_h.ads		20200122131052 7e0af5b3 sdl_h%s
+D sdl_stdinc_h.ads	20200122131052 76b5d89f sdl_stdinc_h%s
+D stdarg_h.ads		20200122131054 db698406 stdarg_h%s
+D stddef_h.ads		20200122131052 f49cc756 stddef_h%s
+D stdint_h.ads		20200122131052 376ae00b stdint_h%s
+D system.ads		20180524051738 32a08138 system%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+X 3 interfac.ads
+38K9*Interfaces 184e15 7|4r6 4r24
+X 4 i-c.ads
+18K20*C 230e17 7|4w17 4r35
+35I9*int<integer> 7|58r59 71r68
+43M9*unsigned
+X 7 sdl_h.ads
+7K9*SDL_h 101l5 101e10
+9N4*SDL_INIT_TIMER
+10N4*SDL_INIT_AUDIO
+11N4*SDL_INIT_VIDEO
+12N4*SDL_INIT_JOYSTICK
+13N4*SDL_INIT_HAPTIC
+14N4*SDL_INIT_GAMECONTROLLER
+15N4*SDL_INIT_EVENTS
+16N4*SDL_INIT_SENSOR
+17N4*SDL_INIT_NOPARACHUTE
+58V13*SDL_Init{4|35I9} 58>23 59b<c,SDL_Init>22
+58m23 flags{8|175M12}
+71V13*SDL_InitSubSystem{4|35I9} 71>32 72b<c,SDL_InitSubSystem>22
+71m32 flags{8|175M12}
+78U14*SDL_QuitSubSystem 78>33 79b<c,SDL_QuitSubSystem>22
+78m33 flags{8|175M12}
+88V13*SDL_WasInit{8|175M12} 88>26 89b<c,SDL_WasInit>22
+88m26 flags{8|175M12}
+96U14*SDL_Quit 97b<c,SDL_Quit>22
+X 8 sdl_stdinc_h.ads
+11K9*SDL_stdinc_h 7|5w6 58r31 71r40 78r41 88r34 88r62 8|684e17
+175M12*Uint32{11|115M12} 7|58r44 71r53 78r54 88r47 88r75
+X 11 stdint_h.ads
+115M12*uint32_t{4|43M9}
+

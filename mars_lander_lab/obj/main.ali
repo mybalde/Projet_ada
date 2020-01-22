@@ -1,0 +1,136 @@
+V "GNAT Lib v2018"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DELAY
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main%b		main.adb		72ceeef8 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.real_time.delays%s  a-retide.adb		a-retide.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W display%s		display.ads		display.ali
+W display.basic%s	display-basic.adb	display-basic.ali
+W display.image%s	display-image.adb	display-image.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20180524051736 bb51c45a ada.numerics%s
+D a-nuelfu.ads		20180524051736 03e83d1c ada.numerics.elementary_functions%s
+D a-ngelfu.ads		20180524051738 55716239 ada.numerics.generic_elementary_functions%s
+D a-reatim.ads		20180524051738 0240fc73 ada.real_time%s
+D a-retide.ads		20180524051738 081cdaa4 ada.real_time.delays%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D display.ads		20200122131044 3a88167c display%s
+D display-basic.ads	20200122131044 66d43323 display.basic%s
+D display-image.ads	20200122131044 86429f23 display.image%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-c.ads		20180524051736 5421119b interfaces.c%s
+D i-cexten.ads		20180524051736 47f3eec4 interfaces.c.extensions%s
+D i-cstrin.ads		20180524051736 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D main.adb		20200122154508 216526b1 main%b
+D sdl_blendmode_h.ads	20200122131052 e308a3b6 sdl_blendmode_h%s
+D sdl_pixels_h.ads	20200122131052 89492fa8 sdl_pixels_h%s
+D sdl_rect_h.ads	20200122131054 5db03fa9 sdl_rect_h%s
+D sdl_rwops_h.ads	20200122131052 d60b2061 sdl_rwops_h%s
+D sdl_stdinc_h.ads	20200122131052 76b5d89f sdl_stdinc_h%s
+D sdl_surface_h.ads	20200122131054 da149c96 sdl_surface_h%s
+D stdarg_h.ads		20200122131054 db698406 stdarg_h%s
+D stddef_h.ads		20200122131052 f49cc756 stddef_h%s
+D stdint_h.ads		20200122131052 376ae00b stdint_h%s
+D system.ads		20180524051738 32a08138 system%s
+D s-atacco.ads		20180524051738 4c36d12f system.address_to_access_conversions%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-multip.ads		20180524051736 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20180524051738 2e5b26a9 system.os_interface%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stausa.ads		20180524051736 017a0a05 system.stack_usage%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20180524051738 601f6b72 system.task_info%s
+D s-taspri.ads		20180524051738 6c1d93d4 system.task_primitives%s
+D s-taprop.ads		20180524051738 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20180524051738 1d8c1ccb system.tasking%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D s-win32.ads		20180524051736 b7f96285 system.win32%s
+X 1 ada.ads
+16K9*Ada 20e8 21|1r6 1r25 6r6 6r45 7r6 7r23
+X 4 a-numeri.ads
+16K13*Numerics 32e17 21|6r10 6r49
+X 5 a-nuelfu.ads
+18K22*Elementary_Functions[6|39] 21|6w19 6r58
+X 6 a-ngelfu.ads
+94V13*Sin{float} 21|50s13[5|18]
+103V13*Cos{float} 21|49s12[5|18]
+X 7 a-reatim.ads
+39K13*Real_Time 185e18 21|1w10 1r29
+49O9*Time<duration> 21|17r11
+54O9*Time_Span<duration> 21|21r22
+61V13*Clock{49O9} 21|44s12
+65V14*"+"{49O9} 21|44s18 79s20
+119V13*Milliseconds{54O9} 21|21s35
+X 11 a-textio.ads
+49K13*Text_IO 471e16 21|7w10 7r27
+X 13 display.ads
+23K9*Display 59e12 21|3w6 3r25 4r6 4r25 5r6 5r25
+38r4*Green{27R9} 21|62r65 74r61
+X 14 display-basic.ads
+20K17*Basic 363e18 21|4w14 4r33
+23I9*Window_ID<356I9> 21|24r13
+25V13*Create_Window{23I9} 21|37s6
+31I9*Canvas_ID<359I9> 21|27r13
+33V13*Get_Canvas{31I9} 21|40s14
+132n7*SDLK_RIGHT{55E9} 21|67r31
+133n7*SDLK_LEFT{55E9} 21|64r31
+134n7*SDLK_DOWN{55E9} 21|57r25
+135n7*SDLK_UP{55E9} 21|60r25
+312U14*Draw_Rect 21|62s10 74s6
+337U14*Swap_Buffers 21|72s7
+345V13*Get_Key_Status{boolean} 21|57s10 60s10 64s16 67s16
+350V12*Is_Killed{boolean} 21|46s14
+356I9 Window_ID_Range<short_short_integer>
+359I9 Canvas_ID_Range<short_integer>
+X 15 display-image.ads
+1K17*Image 7e18 21|5w14 5r33
+X 21 main.adb
+9U11*Main 9b11 82l5 82t9
+11f4 X{float} 50m7 52r23
+12f4 Y{float} 49m7 53r23
+13f4 Pi{float} 61r40
+14f4 DIRECTION{float} 49r16 50r17 61m10 61r23 62r54 74r50
+15f4 SPEED{float} 51m7 52r27 53r27
+17o4 Next{7|49O9} 44m4 76r19 79m7 79r15
+21o4 Period{7|54O9} 44r20 79r22
+24i4 Window{14|23I9} 36m4 40r26 72r21
+27i4 Canvas{14|31I9} 40m4 62r20 74r16
+29f4 newX{float} 52m7 52r15 62r28 74r24
+30f4 newY{float} 53m7 53r15 62r33 74r29
+32N4 Width 37r21
+33N4 Height 37r28
+X 42 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

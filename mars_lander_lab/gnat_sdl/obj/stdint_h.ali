@@ -1,0 +1,86 @@
+V "GNAT Lib v2018"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_LONG_LONG_INTEGERS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U stdint_h%s		stdint_h.ads		24b81f54 NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.extensions%s  i-cexten.ads	i-cexten.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-c.ads		20180524051736 5421119b interfaces.c%s
+D i-cexten.ads		20180524051736 47f3eec4 interfaces.c.extensions%s
+D stdint_h.ads		20200122131052 376ae00b stdint_h%s
+D system.ads		20180524051738 32a08138 system%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+X 3 interfac.ads
+38K9*Interfaces 184e15 6|4r6 4r24 5r6
+X 4 i-c.ads
+18K20*C 230e17 6|4w17 4r35 5r17
+35I9*int<integer> 6|113r23 130r29 151r28
+36I9*short<short_integer> 6|109r23 126r29 147r28
+40I9*signed_char<short_short_integer> 6|105r22 122r28 143r27
+43M9*unsigned 6|115r24 132r30 153r29
+44M9*unsigned_short 6|111r24 128r30 149r29
+47M9*unsigned_char 6|107r23 124r29 145r28
+X 5 i-cexten.ads
+37K22*Extensions 468e28 6|5w19 119r24 136r30 157r29 162r25
+65M9*unsigned_long_long 6|119r35 136r41 157r40 162r36
+X 6 stdint_h.ads
+7K9*stdint_h 194l5 194e13
+9N4*INT8_MIN
+10N4*INT16_MIN
+11N4*INT32_MIN
+12N4*INT64_MIN
+14N4*INT8_MAX
+15N4*INT16_MAX
+16N4*INT32_MAX
+17N4*INT64_MAX
+19N4*UINT8_MAX
+20N4*UINT16_MAX
+21N4*UINT32_MAX
+22N4*UINT64_MAX
+59N4*WCHAR_MIN
+60N4*WCHAR_MAX
+62N4*WINT_MIN
+63N4*WINT_MAX
+105I12*int8_t{4|40I9}
+107M12*uint8_t{4|47M9}
+109I12*int16_t{4|36I9}
+111M12*uint16_t{4|44M9}
+113I12*int32_t{4|35I9}
+115M12*uint32_t{4|43M9}
+117I12*int64_t{long_long_integer}
+119M12*uint64_t{5|65M9}
+122I12*int_least8_t{4|40I9}
+124M12*uint_least8_t{4|47M9}
+126I12*int_least16_t{4|36I9}
+128M12*uint_least16_t{4|44M9}
+130I12*int_least32_t{4|35I9}
+132M12*uint_least32_t{4|43M9}
+134I12*int_least64_t{long_long_integer}
+136M12*uint_least64_t{5|65M9}
+143I12*int_fast8_t{4|40I9}
+145M12*uint_fast8_t{4|47M9}
+147I12*int_fast16_t{4|36I9}
+149M12*uint_fast16_t{4|44M9}
+151I12*int_fast32_t{4|35I9}
+153M12*uint_fast32_t{4|43M9}
+155I12*int_fast64_t{long_long_integer}
+157M12*uint_fast64_t{5|65M9}
+160I12*intmax_t{long_long_integer}
+162M12*uintmax_t{5|65M9}
+

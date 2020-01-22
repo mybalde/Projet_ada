@@ -1,0 +1,62 @@
+V "GNAT Lib v2018"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sdl_touch_h%s		sdl_touch_h.ads		fb5ea3be NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W sdl_stdinc_h%s	sdl_stdinc_h.ads	sdl_stdinc_h.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-c.ads		20180524051736 5421119b interfaces.c%s
+D i-cexten.ads		20180524051736 47f3eec4 interfaces.c.extensions%s
+D i-cstrin.ads		20180524051736 341d0ddf interfaces.c.strings%s
+D sdl_stdinc_h.ads	20200122131052 76b5d89f sdl_stdinc_h%s
+D sdl_touch_h.ads	20200122131054 d9ca6aba sdl_touch_h%s
+D stdarg_h.ads		20200122131054 db698406 stdarg_h%s
+D stddef_h.ads		20200122131052 f49cc756 stddef_h%s
+D stdint_h.ads		20200122131052 376ae00b stdint_h%s
+D system.ads		20180524051738 32a08138 system%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+X 3 interfac.ads
+38K9*Interfaces 184e15 8|4r6 4r24
+X 4 i-c.ads
+18K20*C 230e17 8|4w17 4r35
+35I9*int<integer> 8|52r43 59r41 66r67 73r64
+X 7 sdl_stdinc_h.ads
+11K9*SDL_stdinc_h 684e17 8|5w6 34r27 36r28
+181I12*Sint64{11|117I12} 8|34r40 36r41
+X 8 sdl_touch_h.ads
+7K9*SDL_touch_h 78l5 78e16
+34I12*SDL_TouchID{7|181I12} 59r53 66r47 73r43
+36I12*SDL_FingerID{7|181I12} 39r20
+38R9*SDL_Finger 43e14 44r39 73r83
+39i7*id{36I12}
+40f7*x{float}
+41f7*y{float}
+42f7*pressure{float}
+52V13*SDL_GetNumTouchDevices{4|35I9} 53b<c,SDL_GetNumTouchDevices>22
+59V13*SDL_GetTouchDevice{34I12} 59>33 60b<c,SDL_GetTouchDevice>22
+59i33 index{4|35I9}
+66V13*SDL_GetNumTouchFingers{4|35I9} 66>37 67b<c,SDL_GetNumTouchFingers>22
+66i37 touchID{34I12}
+73V13*SDL_GetTouchFinger(38R9) 73>33 73>56 74b<c,SDL_GetTouchFinger>22
+73i33 touchID{34I12}
+73i56 index{4|35I9}
+X 11 stdint_h.ads
+117I12*int64_t{long_long_integer}
+

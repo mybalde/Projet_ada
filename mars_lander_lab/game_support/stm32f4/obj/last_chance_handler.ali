@@ -1,0 +1,30 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A -g
+A -gnatwa
+A -gnatQ
+A -gnatw.X
+A -mtune=generic
+A -march=x86-64
+P NO ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U last_chance_handler%s	last_chance_handler.ads	9c641c00 EE OO PK
+W system%s		system.ads		system.ali
+
+D last_chance_handler.ads  20190116083743 da51f004 last_chance_handler%s
+D system.ads		20180525052301 4635ec04 system%s
+X 1 last_chance_handler.ads
+30K9*Last_Chance_Handler 36l5 36e24
+32U14*Last_Chance_Handler 32>35 32>57 33i<c,__gnat_last_chance_handler>22
+. 34r22
+32m35 Msg{2|67M9}
+32i57 Line{integer}
+X 2 system.ads
+37K9*System 1|28w6 32r41 2|156e11
+67M9*Address 1|32r48
+

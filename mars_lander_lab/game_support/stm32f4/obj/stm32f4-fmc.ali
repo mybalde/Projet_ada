@@ -1,0 +1,186 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A --RTS=/home/mercier/opt/GNAT/2018-arm-elf/arm-eabi/lib/gnat/ravenscar-sfp-stm32f429disco/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatQ
+A -gnatw.X
+P DB ZX
+
+RN
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U stm32f4.fmc%b		stm32f4-fmc.adb		0774cab4 NE OO PK IU
+W stm32f4%s		stm32f4.ads		stm32f4.ali
+Z system%s		system.ads		system.ali
+
+U stm32f4.fmc%s		stm32f4-fmc.ads		35fb2978 EE OO PK IU
+W stm32f4%s		stm32f4.ads		stm32f4.ali
+W system%s		system.ads		system.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+D interfac.ads		20180525200321 5ab55268 interfaces%s
+D stm32f4.ads		20190116083743 e24a28a6 stm32f4%s
+D stm32f4-fmc.ads	20190116083743 7dccaa84 stm32f4.fmc%s
+D stm32f4-fmc.adb	20190116083743 7ab86030 stm32f4.fmc%b
+D system.ads		20180525200320 aa7dab5a system%s
+D s-stoele.ads		20180525200321 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20180525200321 34867c83 system.unsigned_types%s
+X 1 interfac.ads
+74M9*Unsigned_32
+X 2 stm32f4.ads
+35K9*STM32F4 147e12 3|3r9 168r5 4|1r14 83r5
+37M9*Word<1|74M9> 3|77r39 87r50 91r51 96r18 97r18 98r18 99r18 100r18 101r18
+. 110r17 111r17 112r17 113r17 114r17 123r15 124r15 125r15 132r30 133r30 134r30
+. 135r30 136r30 137r30 138r30 143r28 144r28 145r28 146r28 147r28 148r28 149r28
+. 150r28 151r28 156r32 157r32 158r32 159r32 165r34 165r47 166r43 4|4r36 61r34
+. 61r47 62r13 78r43
+X 3 stm32f4-fmc.ads
+3K17*FMC 2|35k9 3|168l13 168e16 4|1b22 83l13 83t16
+4N4*FMC_Bank1_SDRAM 4|17r28 24r24 29r28 48r24
+5N4*FMC_Bank2_SDRAM
+7N4*FMC_Bank1_NORSRAM1
+8N4*FMC_Bank1_NORSRAM2
+9N4*FMC_Bank1_NORSRAM3
+10N4*FMC_Bank1_NORSRAM4
+11N4*FMC_Bank2_NAND 4|65r15
+12N4*FMC_Bank3_NAND 4|67r15
+13N4*FMC_Bank4_PCCARD 4|69r15
+15N4*FMC_RowBits_Number_11b
+16N4*FMC_RowBits_Number_12b
+17N4*FMC_RowBits_Number_13b
+19N4*FMC_ColumnBits_Number_8b
+20N4*FMC_ColumnBits_Number_9b
+21N4*FMC_ColumnBits_Number_10b
+22N4*FMC_ColumnBits_Number_11b
+24N4*FMC_SDMemory_Width_8b
+25N4*FMC_SDMemory_Width_16b
+26N4*FMC_SDMemory_Width_32b
+28N4*FMC_InternalBank_Number_2
+29N4*FMC_InternalBank_Number_4
+31N4*FMC_CAS_Latency_1
+32N4*FMC_CAS_Latency_2
+33N4*FMC_CAS_Latency_3
+35N4*FMC_Write_Protection_Disable
+36N4*FMC_Write_Protection_Enable
+38N4*FMC_SDClock_Disable
+39N4*FMC_SDClock_Period_2
+40N4*FMC_SDClock_Period_3
+42N4*FMC_Read_Burst_Disable
+43N4*FMC_Read_Burst_Enable
+45N4*FMC_ReadPipe_Delay_0
+46N4*FMC_ReadPipe_Delay_1
+47N4*FMC_ReadPipe_Delay_2
+49N4*FMC_Command_Mode_Normal
+50N4*FMC_Command_Mode_CLK_Enabled
+51N4*FMC_Command_Mode_PALL
+52N4*FMC_Command_Mode_AutoRefresh
+53N4*FMC_Command_Mode_LoadMode
+54N4*FMC_Command_Mode_Selfrefresh
+55N4*FMC_Command_Mode_PowerDown
+57N4*FMC_Command_Target_Bank2
+58N4*FMC_Command_Target_Bank1
+59N4*FMC_Command_Target_Bank1_2
+61N4*FMC_NormalMode_Status
+65N4*FMC_IT_RisingEdge
+66N4*FMC_IT_Level
+67N4*FMC_IT_FallingEdge
+68N4*FMC_IT_Refresh
+70N4*FMC_FLAG_RisingEdge
+71N4*FMC_FLAG_Level
+72N4*FMC_FLAG_FallingEdge
+73N4*FMC_FLAG_FEMPT
+74N4*FMC_FLAG_Refresh
+75N4*FMC_FLAG_Busy
+77A9*Word_x2(2|37M9)<integer> 121r15 122r15
+79N4*FMC_Base 80r37 81r37 82r37 83r37 84r37 85r37
+80N4*FMC_Bank1_R_BASE 89r51
+81N4*FMC_Bank1E_R_BASE 93r51
+82N4*FMC_Bank2_R_BASE 105r51
+83N4*FMC_Bank3_R_BASE 107r51
+84N4*FMC_Bank4_R_BASE 118r51
+85N4*FMC_Bank5_6_R_BASE 129r51
+87A9*FMC_Bank1_Registers(2|37M9)<integer> 88r12
+88a4*Bank1{87A9}
+91A9*FMC_Bank1E_Registers(2|37M9)<integer> 92r13
+92a4*Bank1E{91A9}
+95R9*FMC_Bank2_3_Registers 102e15 104r12 106r12
+96m7*PCR{2|37M9}
+97m7*SR{2|37M9} 4|66r26 68r26
+98m7*PMEM{2|37M9}
+99m7*PATT{2|37M9}
+100m7*Reserved{2|37M9}
+101m7*ECCR{2|37M9}
+104r4*Bank2{95R9} 4|66r20
+106r4*Bank3{95R9} 4|68r20
+109R9*FMC_Bank4_Registers 115e15 117r12
+110m7*PCR{2|37M9}
+111m7*SR{2|37M9} 4|70r26
+112m7*PMEM{2|37M9}
+113m7*PATT{2|37M9}
+114m7*PIO{2|37M9}
+117r4*Bank4{109R9} 4|70r20
+120R9*FMC_Bank5_6_Registers 126e15 128r14
+121a7*SDCR{77A9} 4|18m18 24m18 25m18
+122a7*SDTR{77A9} 4|38m18 48m18 49m18
+123m7*SDCMR{2|37M9} 4|55m15
+124m7*SDRTR{2|37M9} 4|80m15 80r32
+125m7*SDSR{2|37M9} 4|72r28
+128r4*Bank5_6{120R9} 4|18m10 24m10 25m10 38m10 48m10 49m10 55m7 72r20 80m7
+. 80r24
+131R9*FMC_SDRAM_TimingInit_Config 139e14 152r28
+132m7*LoadToActiveDelay{2|37M9} 4|30r44 40r44
+133m7*ExitSelfRefreshDelay{2|37M9} 4|31r38 41r42
+134m7*SelfRefreshTime{2|37M9} 4|32r38 42r43
+135m7*RowCycleDelay{2|37M9} 4|33r38 45r45
+136m7*WriteRecoveryTime{2|37M9} 4|34r38 43r43
+137m7*RPDelay{2|37M9} 4|35r38 46r38
+138m7*RCDDelay{2|37M9} 4|36r38
+141R9*FMC_SDRAM_Init_Config 153e14 162r43 4|3r43
+142i7*Bank{integer} 4|17r21 18r35 25r35 29r21 38r35 49r35
+143m7*ColumnBitsNumber{2|37M9} 4|7r27
+144m7*RowBitsNumber{2|37M9} 4|8r20
+145m7*SDMemoryDataWidth{2|37M9} 4|9r20
+146m7*InternalBankNumber{2|37M9} 4|10r20
+147m7*CASLatency{2|37M9} 4|11r20
+148m7*WriteProtection{2|37M9} 4|12r20
+149m7*SDClockPeriod{2|37M9} 4|13r20 20r30
+150m7*ReadBurst{2|37M9} 4|14r20 21r23
+151m7*ReadPipeDelay{2|37M9} 4|15r20 22r23
+152r7*Timing_Conf{131R9} 4|30r32 31r26 32r26 33r26 34r26 35r26 36r26 40r32
+. 41r30 42r31 43r31 45r33 46r26
+155R9*FMC_SDRAM_Cmd_Conf 160e14 164r35 4|53r35
+156m7*CommandMode{2|37M9} 4|55r28
+157m7*CommandTarget{2|37M9} 4|56r16
+158m7*AutoRefreshNumber{2|37M9} 4|57r18
+159m7*ModeRegisterDefinition{2|37M9} 4|58r17
+162U14*FMC_SDRAM_Init 162>30 4|3b14 51l8 51t22
+162r30 SDRAM_Conf{141R9} 4|3b30 7r16 8r9 9r9 10r9 11r9 12r9 13r9 14r9 15r9
+. 17r10 18r24 20r19 21r12 22r12 25r24 29r10 30r21 31r15 32r15 33r15 34r15
+. 35r15 36r15 38r24 40r21 41r19 42r20 43r20 45r22 46r15 49r24
+164U14*FMC_SDRAM_Cmd 164>29 4|53b14 59l8 59t21
+164r29 Cmd{155R9} 4|53b29 55r24 56r12 57r14 58r13
+165V13*FMC_Get_Flag{boolean} 165>27 165>40 4|61b13 76l8 76t20
+165m27 Bank{2|37M9} 4|61b27 64r12
+165m40 Flag{2|37M9} 4|61b40 75r23
+166U14*FMC_Set_Refresh_Count 166>37 4|78b14 81l8 81t29
+166m37 Cnt{2|37M9} 4|78b37 80r41
+X 4 stm32f4-fmc.adb
+4m7 Tmpr1{2|37M9} 7m7 18r44 25r44
+4m14 Tmpr2{2|37M9} 30m10 38r44 40m10 49r44
+4m21 Tmpr3{2|37M9} 20m10 24r44
+4m28 Tmpr4{2|37M9} 45m10 48r44
+62m7 Reg{2|37M9} 66m13 68m13 70m13 72m13 75r15
+X 5 system.ads
+60K9*System 3|1w6 89r32 93r32 105r32 107r32 118r32 129r32 5|174e11
+90M9*Address 3|89r32 93r32 105r32 107r32 118r32 129r32
+

@@ -1,0 +1,192 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A --RTS=/home/mercier/opt/GNAT/2018-arm-elf/arm-eabi/lib/gnat/ravenscar-sfp-stm32f429disco/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatQ
+A -gnatw.X
+P DB ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U fonts%b		fonts.adb		1905c71d NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W stm32f4%s		stm32f4.ads		stm32f4.ali
+
+U fonts%s		fonts.ads		a4a72271 EE NE OO PK
+W screen_interface%s	screen_interface.adb	screen_interface.ali
+
+D ada.ads		20180525200322 76789da1 ada%s
+D a-reatim.ads		20180525200322 4c16970e ada.real_time%s
+D a-unccon.ads		20180525200322 0e9b276f ada.unchecked_conversion%s
+D fonts.ads		20190116083743 7bd8204a fonts%s
+D fonts.adb		20190116083743 da229d99 fonts%b
+D interfac.ads		20180525200321 5ab55268 interfaces%s
+D i-stm32.ads		20180525200320 2ad0960b interfaces.stm32%s
+D i-stm32-pwr.ads	20180525200320 4a098e84 interfaces.stm32.pwr%s
+D screen_interface.ads	20190116083743 df7f023b screen_interface%s
+D stm32f4.ads		20190116083743 e24a28a6 stm32f4%s
+D stm32f4-dma.ads	20190116083743 fd8211e5 stm32f4.dma%s
+D stm32f4-gpio.ads	20190116083743 b9006270 stm32f4.gpio%s
+D stm32f4-i2c.ads	20190116083743 bb6f6c68 stm32f4.i2c%s
+D stm32f4-lcd.ads	20190116083743 c4314554 stm32f4.lcd%s
+D stm32f4-rcc.ads	20190116083743 df5307c9 stm32f4.rcc%s
+D stm32f4-spi.ads	20190116083743 984a00b8 stm32f4.spi%s
+D stm32f4-timers.ads	20190116083743 477fe5ae stm32f4.timers%s
+D stm32f4-usarts.ads	20190116083743 11302c53 stm32f4.usarts%s
+D stm32f429_discovery.ads  20190116083743 b3123381 stm32f429_discovery%s
+D system.ads		20180525200320 aa7dab5a system%s
+D s-bb.ads		20180525200321 09e072ae system.bb%s
+D s-bbbopa.ads		20180525200320 5e9af419 system.bb.board_parameters%s
+D s-bbbosu.ads		20180525200322 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20180525200320 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20180525200322 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20180525200320 b5961a30 system.bb.mcu_parameters%s
+D s-bbpara.ads		20180525200320 431abc17 system.bb.parameters%s
+D s-bbthre.ads		20180525200322 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20180525200322 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20180525200322 ad086247 system.bb.time%s
+D s-multip.ads		20180525200322 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20180525200322 229b14dd system.os_interface%s
+D s-stm32.ads		20180525200320 e898dba2 system.stm32%s
+D s-stoele.ads		20180525200321 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20180525200321 34867c83 system.unsigned_types%s
+X 4 fonts.ads
+3K9*Fonts 37l5 37e10 5|4b14 757l5 757t10
+5E9*BMP_Font 5e52 10r16 16r16 22r16 29r16 33r31 35r33 5|631r16 645r16 664r16
+. 701r16 739r31 748r32
+5n22*Font8x8{5E9} 5|636r15 650r15 742r15 751r15
+5n31*Font12x12{5E9} 5|637r15 651r15 743r15 752r15
+5n42*Font16x24{5E9} 5|638r15 652r15 744r15 753r15
+7U14*Draw_Char 8>7 8>10 9>7 10>7 11>7 11>11 5|628b14 640l8 640t17 677s10
+8i7 X{integer} 5|629b7 636r45 637r45 638r45
+8i10 Y{integer} 5|629b10 636r48 637r48 638r48
+9e7 Char{character} 5|630b7 636r51 637r51 638r51
+10e7 Font{5E9} 5|631b7 635r12
+11m7 FG{9|21M12} 5|632b7 636r57 637r57 638r57
+11m11 BG{9|21M12} 5|632b11 636r61 637r61 638r61
+13U14*Draw_Char 14>7 14>10 15>7 16>7 17>7 5|642b14 654l8 654t17 714s10
+14i7 X{integer} 5|643b7 650r45 651r45 652r45
+14i10 Y{integer} 5|643b10 650r48 651r48 652r48
+15e7 Char{character} 5|644b7 650r51 651r51 652r51
+16e7 Font{5E9} 5|645b7 649r12
+17m7 FG{9|21M12} 5|646b7 650r57 651r57 652r57
+19U14*Draw_String 20>7 20>10 21>7 22>7 23>7 23>11 24>7 5|661b14 696l8 696t19
+20i7 X{integer} 5|662b7 669r24
+20i10 Y{integer} 5|662b10 670r24
+21a7 Str{string} 5|663b7 672r16
+22e7 Font{5E9} 5|664b7 677r34 680r30 682r40 688r37
+23m7 FG{9|21M12} 5|665b7 677r40
+23m11 BG{9|21M12} 5|665b11 677r44
+24b7 Wrap{boolean} 5|666b7 681r16
+26U14*Draw_String 27>7 27>10 28>7 29>7 30>7 31>7 5|698b14 733l8 733t19
+27i7 X{integer} 5|699b7 706r24
+27i10 Y{integer} 5|699b10 707r24
+28a7 Str{string} 5|700b7 709r16
+29e7 Font{5E9} 5|701b7 714r34 717r30 719r40 725r37
+30m7 FG{9|21M12} 5|702b7 714r40
+31b7 Wrap{boolean} 5|703b7 718r16
+33V13*Char_Size{9|13R9} 33>24 5|680s19 682s29 688s26 717s19 719s29 725s26
+. 739b13 746l8 746t17
+33e24 Font{5E9} 5|739b24 741r12
+35V13*String_Size{9|13R9} 35>26 35>43 5|748b12 755l8 755t19
+35e26 Font{5E9} 5|748b25 750r11
+35a43 Text{string} 5|748b42 751r40 752r41 753r41
+X 5 fonts.adb
+6M9 Byte<6|63M9> 394r46
+7M9 Half_Word<6|66M9> 9r50 296r50
+9a4 BMP_Font16x24(7M9) 595r17 617r17
+296a4 BMP_Font12x12(7M9) 552r17 574r17
+394a3 BMP_Font8x8(6M9) 508r17 530r17
+496U14 Draw_Char_8x8 496b14 496>29 496>32 496>47 496>65 496>69 517l8 517t21
+. 636s28
+496i29 X{integer} 500r10 501r9 509r28 512r31
+496i32 Y{integer} 500r38 501r24 509r35 512r38
+496e47 Char{character} 497r56
+496m65 FG{9|21M12} 509r43
+496m69 BG{9|21M12} 511r20 512r46
+497i7 Char_Index{natural} 508r30
+506i11 H{integer} 508r43 509r39 512r42
+507i14 W{integer} 508r59 509r32 512r35
+519U14 Draw_Char_8x8 519b14 519>29 519>32 519>47 519>65 535l8 535t21 650s28
+519i29 X{integer} 523r10 524r9 531r28
+519i32 Y{integer} 523r38 524r24 531r35
+519e47 Char{character} 520r56
+519m65 FG{9|21M12} 531r43
+520i7 Char_Index{natural} 530r30
+528i11 H{integer} 530r43 531r39
+529i14 W{integer} 530r59 531r32
+541U14 Draw_Char_12x12 541b14 541>31 541>34 541>49 541>67 541>71 561l8 561t23
+. 637s28
+541i31 X{integer} 545r10 546r9 553r28 556r31
+541i34 Y{integer} 545r38 546r24 553r35 556r38
+541e49 Char{character} 542r56
+541m67 FG{9|21M12} 553r43
+541m71 BG{9|21M12} 555r20 556r46
+542i7 Char_Index{natural} 552r32
+550i11 H{integer} 552r45 553r39 556r42
+551i14 W{integer} 552r62 553r32 556r35
+563U14 Draw_Char_12x12 563b14 563>31 563>34 563>49 563>67 579l8 579t23 651s28
+563i31 X{integer} 567r10 568r9 575r28
+563i34 Y{integer} 567r38 568r24 575r35
+563e49 Char{character} 564r56
+563m67 FG{9|21M12} 575r43
+564i7 Char_Index{natural} 574r32
+572i11 H{integer} 574r45 575r39
+573i14 W{integer} 574r62 575r32
+585U14 Draw_Char_16x24 585b14 585>31 585>34 585>49 585>67 585>71 604l8 604t23
+. 638s28
+585i31 X{integer} 589r10 596r28 599r31
+585i34 Y{integer} 589r38 596r35 599r38
+585e49 Char{character} 586r56
+585m67 FG{9|21M12} 596r43
+585m71 BG{9|21M12} 598r20 599r46
+586i7 Char_Index{natural} 595r32
+593i11 H{integer} 595r45 596r39 599r42
+594i14 W{integer} 595r56 596r32 599r35
+606U14 Draw_Char_16x24 606b14 606>31 606>34 606>49 606>67 622l8 622t23 652s28
+606i31 X{integer} 610r10 611r9 618r28
+606i34 Y{integer} 610r38 611r24 618r35
+606e49 Char{character} 607r56
+606m67 FG{9|21M12} 618r43
+607i7 Char_Index{natural} 617r32
+615i11 H{integer} 617r45 618r39
+616i14 W{integer} 617r56 618r32
+669i7 C_X{integer} 677r21 680r13 683m16 688m13 688r20
+670i7 C_Y{integer} 677r26 682m16 682r23
+672e11 C=672:16{character} 677r31
+706i7 C_X{integer} 714r21 717r13 720m16 725m13 725r20
+707i7 C_Y{integer} 714r26 719m16 719r23
+709e11 C=709:16{character} 714r31
+X 6 interfac.ads
+38K9*Interfaces 5|1w6 6r21 7r26 6|184e15
+63M9*Unsigned_8 5|6r32
+66M9*Unsigned_16 5|7r37
+X 9 screen_interface.ads
+3K9*Screen_Interface 4|1w6 1r28 9|45e21
+4I12*Width{14|16I12} 5|500r14 523r14 545r14 567r14 589r14 610r14 680r40 717r40
+5I12*Height{14|17I12} 5|500r42 523r42 545r42 567r42 589r42 610r42
+13R9*Point 4|33r48 35r65 5|739r48 748r64 9|16e14
+14i7*X{4I12} 5|680r36 688r43 717r36 725r43
+15i7*Y{5I12} 5|682r46 719r46
+21M12*Color{14|19M12} 4|11r16 17r16 23r16 30r16 5|496r74 519r70 541r76 563r72
+. 585r76 606r72 632r16 646r12 665r16 702r16
+38U14*Set_Pixel 5|509s16 512s19 531s16 553s16 556s19 575s16 596s16 599s19
+. 618s16
+X 10 stm32f4.ads
+35K9*STM32F4 5|2w6 2r19 10|147e12
+38M9*Half_Word<6|66M9>
+X 14 stm32f4-lcd.ads
+16I12*Width{natural}
+17I12*Height{natural}
+19M12*Pixel{10|38M9}
+

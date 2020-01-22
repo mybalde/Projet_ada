@@ -1,0 +1,342 @@
+V "GNAT Lib v21.20200115"
+A -O0
+A -gnatA
+A -g
+A -gnatwa
+A -gnatQ
+A -gnatw.X
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U libm_single%b		libm_single.adb		1a43b394 NE OO PK
+W libm%s		libm.adb		libm.ali
+Z libm%b		libm.adb		libm.ali  ED
+W numerics%s		numerics.ads		numerics.ali
+Z system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
+
+U libm_single%s		libm_single.ads		be2b0680 NE OO PU PK
+
+D ada.ads		20191018001527 76789da1 ada%s
+D a-unccon.ads		20191018001527 0e9b276f ada.unchecked_conversion%s
+D libm.ads		20200114132237 3e3168a0 libm%s
+D libm.adb		20200114132237 ad04055b libm%b
+D libm_single.ads	20200114132237 be2b0680 libm_single%s
+D libm_single.adb	20200114132237 7c959d2b libm_single%b
+D numerics.ads		20200114132237 e6cc409f numerics%s
+D system.ads		20200103010950 4635ec04 system%s
+D s-exctab.ads		20200103010950 54135002 system.exception_table%s
+D s-fatflt.ads		20200103010950 11beb392 system.fat_flt%s
+D s-fatgen.ads		20200103010950 49cbaf86 system.fat_gen%s
+D s-stalib.ads		20200103010950 09bd3940 system.standard_library%s
+G a e
+G c b b b [b libm_single 46 1 none]
+G c Z s b [acos libm_single 75 13 none]
+G c Z s b [acosh libm_single 100 13 none]
+G c Z s b [asin libm_single 121 13 none]
+G c Z s b [asinh libm_single 146 13 none]
+G c Z s b [atan libm_single 166 13 none]
+G c Z s b [atan2 libm_single 182 13 none]
+G c Z s b [atanh libm_single 216 13 none]
+G c Z s b [cos libm_single 237 13 none]
+G c Z s b [cosh libm_single 260 13 none]
+G c Z s b [exp libm_single 283 13 none]
+G c Z s b [exp2 libm_single 304 13 none]
+G c Z s b [log libm_single 325 13 none]
+G c Z s b [log1p libm_single 347 13 none]
+G c Z s b [log2 libm_single 369 13 none]
+G c Z s b [pow libm_single 391 13 none]
+G c Z s b [sin libm_single 427 13 none]
+G c Z s b [sinh libm_single 447 13 none]
+G c Z s s [sqrt libm_single 467 13 none]
+G c Z s b [tan libm_single 481 13 none]
+G c Z s b [tanh libm_single 501 13 none]
+G c Z s s [identity libm_single 518 13 none]
+G c Z s s [infinity libm_single 520 13 none]
+G c Z s s [nan libm_single 522 13 none]
+G c Z s s [exact libm_single 524 13 none]
+G c Z s s [epsilon libm_single 526 13 none]
+G c Z s s [maximum_relative_error libm_single 528 13 none]
+G c Z b b [float_tableIP libm_single 54 9 none]
+G c Z b b [reconstruct_pow libm_single 94 13 none]
+G c Z b b [reduce_044 libm_single 99 14 none]
+G c Z b b [reduce_1_16 libm_single 105 13 none]
+G c Z b b [approx_asin libm_single__float_approximations 105 16 111_4]
+G c Z b b [approx_atan libm_single__float_approximations 115 16 111_4]
+G c Z b b [approx_cos libm_single__float_approximations 126 16 111_4]
+G c Z b b [approx_exp libm_single__float_approximations 138 16 111_4]
+G c Z b b [approx_exp2 libm_single__float_approximations 149 16 111_4]
+G c Z b b [approx_log libm_single__float_approximations 160 16 111_4]
+G c Z b b [approx_power_log libm_single__float_approximations 172 16 111_4]
+G c Z b b [approx_sin libm_single__float_approximations 181 16 111_4]
+G c Z b b [approx_sinh libm_single__float_approximations 192 16 111_4]
+G c Z b b [approx_tan libm_single__float_approximations 205 16 111_4]
+G c Z b b [approx_cot libm_single__float_approximations 216 16 111_4]
+G c Z b b [approx_tanh libm_single__float_approximations 227 16 111_4]
+G c Z b b [asin libm_single__float_approximations 239 16 111_4]
+G c Z b b [multiply_add libm_single__float_approximations 98 16 111_4]
+G c Z b b [compute_horner libm_single__float_approximations__float_polynomials 65 16 100_7_111_4]
+G c Z b b [polynomialIP libm_single__float_approximations__float_polynomials 57 12 100_7_111_4]
+G c Z b b [reduce_ln_2 libm_single 126 14 none]
+G c Z b b [reduce_half_pi libm_single 136 14 none]
+G c Z b b [reduce_half_pi_large libm_single 163 14 none]
+G c Z b b [split_veltkamp libm_single 166 14 none]
+G c Z b b [multiply_add libm_single 169 13 none]
+G c Z b b [acosR libm_single__instantiations__acosGP12507 349 16 none]
+G c Z b b [acos libm_single__instantiations 349 16 none]
+G c Z b b [atan2R libm_single__instantiations__atan2GP12553 350 16 none]
+G c Z b b [atan2 libm_single__instantiations 350 16 none]
+G r i none [b libm_single 46 1 none] [generic_polynomials libm 55 12 none]
+G r i none [b libm_single 46 1 none] [generic_approximations libm 100 12 none]
+G r i none [b libm_single 46 1 none] [generic_acos libm 72 13 none]
+G r i none [b libm_single 46 1 none] [generic_atan2 libm 77 13 none]
+G r i none [pow libm_single 391 13 none] [generic_pow_special_cases libm 81 14 none]
+X 3 libm.ads
+36K9*Libm 246e9 6|44w6 44r16
+39N4*Ln_2 6|225r44 226r44 227r24 238r15 239r19 243r14 244r19 371r27 401r27
+. 595r57 596r41 653r24 849r28
+42N4*Inv_Ln_2 6|128r41 228r50
+43N4*Half_Pi 6|268r42 269r42 270r42 271r26 299r39
+48N4*Max_Red_Trig_Arg 6|138r30
+58N4*Sqrt_2 6|90r23
+61N4*Root16_Half 6|60r18 61r18 62r18 63r18 64r18 65r18 66r18 67r18 68r18
+. 69r18 70r18 71r18 72r18 73r18 74r18 80r18 80r51 81r18 81r51 82r18 82r51
+. 83r18 83r51 84r18 84r51 85r18 85r51 86r18 86r51 87r18 87r51
+64N4*Sqrt_Half 6|612r27
+66I12*Quadrant{integer} 6|136r56 163r66 264r65 291r18 294r18 307r56 444r16
+. 741r16
+72v13*Generic_Acos 6|349r29
+77v13*Generic_Atan2 6|350r29
+81u14*Generic_Pow_Special_Cases 6|663r42
+88+12 T
+89i7 Mantissa{positive} 6|112r42
+100k12*Generic_Approximations 244e30 6|112r11
+105V16*Approx_Asin{float} 71i21[6|111]
+115V16*Approx_Atan{float} 76i21[6|111]
+126V16*Approx_Cos{float} 6|451s20[111] 747s58[111]
+138V16*Approx_Exp{float} 6|543s12[111]
+149V16*Approx_Exp2{float} 6|573s12[111] 727s15[111]
+160V16*Approx_Log{float} 6|617s17[111]
+172V16*Approx_Power_Log{float} 6|693s16[111]
+181V16*Approx_Sin{float} 6|453s20[111] 747s38[111]
+192V16*Approx_Sinh{float} 6|799s17[111]
+205V16*Approx_Tan{float} 6|833s17[111]
+216V16*Approx_Cot{float} 6|836s17[111]
+227V16*Approx_Tanh{float} 6|860s23[111]
+239V16*Asin{float} 6|383s62[111]
+X 4 libm.adb
+98V16 Multiply_Add{float} 50i21[6|111]
+X 5 libm_single.ads
+38K9*Libm_Single 518E13 530l5 530e16 6|46b14 867l5 867t16
+75V13*Acos{float} 75>19 6|357b13
+75f19 X{float} 6|357r62
+100V13*Acosh{float} 100>20 6|363b13 377l8 377t13
+100f20 X{float} 6|363b20 367r25 370r10 371r22 372r13 375r22 375r33 375r45
+121V13*Asin{float} 121>19 6|383b13
+121f19 X{float} 6|383r68
+146V13*Asinh{float} 146>20 6|389b13 409l8 409t13
+146f20 X{float} 6|389b20 393r31 394r27 394r31 408r32
+166V13*Atan{float} 166>19 6|415b13
+166f19 X{float} 6|415r63
+182V13*Atan2{float} 182>20 182>31 6|421b13
+182f20 Y{float} 6|421r67
+182f31 X{float} 6|421r70
+216V13*Atanh{float} 216>20 6|427b13
+216f20 X{float} 6|431r10 432r25 432r36 433r27 433r38
+237V13*Cos{float} 237>18 6|439b13 457l8 457t11
+237f18 X{float} 6|439b18 443r26
+260V13*Cosh{float} 260>19 6|463b13 515l8 515t12
+260f19 X{float} 6|463b19 467r30 512r20
+283V13*Exp{float} 283>18 6|506s15 512s15 521b13 545l8 545t11 804s15 810s15
+. 858s36
+283f18 X{float} 6|521b18 526r16
+304V13*Exp2{float} 304>19 6|551b13 581l8 581t12
+304f19 X{float} 6|551b19 557r16 571r21 577r21
+325V13*Log{float} 325>18 6|371s17 375s17 401s17 405s17 587b13 621l8 621t11
+. 639s17 653s7
+325f18 X{float} 6|587b18 591r53 593r52 600r10 601r13 607r13 608r17
+347V13*Log1p{float} 347>20 6|373s17 403s17 432s12 433s13 627b13 641l8 641t13
+347f20 X{float} 6|627b20 634r16 635r17 636r13 637r17 639r28 639r34 639r46
+369V13*Log2{float} 369>19 6|647b13
+369f19 X{float} 6|653r12
+391V13*Pow{float} 391>18 391>24 6|659b13 730l8 730t11
+391f18 Left{float} 6|659b18 667r43 668r43 681r26
+391f24 Right{float} 6|659b24 669r31 681r32
+427V13*Sin{float} 427>18 6|736b13 750l8 750t11
+427f18 X{float} 6|736b18 740r25 749r32
+447V13*Sinh{float} 447>19 6|756b13 813l8 813t12
+447f19 X{float} 6|756b19 760r46 761r33 799r30
+467V13*Sqrt{float} 3|70i21 99i21 5|467>19 6|373s28 375s26 403s39 405s26
+467f19 X{float}
+481V13*Tan{float} 481>18 6|819b13 838l8 838t11
+481f18 X{float} 6|819b18 823r20 833r52 836r52
+501V13*Tanh{float} 501>19 6|844b13 865l8 865t12
+501f19 X{float} 6|844b19 848r35 864r35
+518V13 Identity{float} 518>23 520s45
+518f23 X{float} 518r51
+520V13 Infinity{float} 522s34 522s45 6|539s34 568s34 577s47 604s21
+522V13 NaN{float} 6|602s20
+524V13 Exact{float} 3|97i21 5|524>20
+524f20 X{long_float} 524r60
+526V13 Epsilon{float}
+528V13 Maximum_Relative_Error{float} 3|98i21 5|528>37
+528f37 X{float} 528r71
+X 6 libm_single.adb
+47F12 F{float} 49r19 50r19 109r7 163r47 163r55 169r37 169r49 254r20 254r41
+. 264r47 264r54 267r33 268r21 268r26 269r21 269r26 270r21 270r26 271r21 273r14
+. 274r14 275r14 299r15 349r43 350r44 357r23 357r34 363r24 363r34 367r20 383r23
+. 383r34 389r24 389r34 393r22 394r22 395r13 408r14 415r23 415r34 421r27 421r38
+. 427r24 427r34 439r22 439r32 443r16 445r16 463r23 463r33 467r20 500r11 501r11
+. 521r22 521r32 526r11 527r11 529r32 534r27 551r23 551r33 557r11 558r11 560r16
+. 563r27 567r18 567r26 567r29 577r25 587r22 587r32 591r41 592r21 592r41 593r21
+. 593r41 594r51 595r30 595r41 596r30 597r21 647r23 647r33 659r32 659r42 663r69
+. 667r31 668r20 668r31 669r20 670r11 673r35 676r35 694r16 736r22 736r32 740r16
+. 742r16 749r14 756r23 756r33 760r23 760r28 761r23 794r11 795r11 819r22 819r32
+. 823r11 833r34 836r34 844r23 844r33 848r25 849r35 849r42 851r16 864r14
+52i4 F_HM{integer} 225r50 226r55
+54A9 Float_Table(float)<integer> 58r24 79r24
+58a4 A1_Tab_F{54A9} 185r17 203r15 207r15 211r15 215r25 216r37
+79a4 A2_Tab_F{54A9} 215r45
+89f4 Sqrt_Epsilon_F{float} 370r20 398r14 400r23
+94V13 Reconstruct_Pow{float} 95>7 96>7 97>7 175b13 187l8 187t23 728s17
+95f7 Z{float} 176b7 185r36
+96i7 P{integer} 177b7 185r27
+97i7 M{integer} 178b7 186r37
+99U14 Reduce_044 100>7 101<7 102<7 193b14 218l8 218t18 689s10
+100f7 X{float} 194b7 203r10 207r10 211r10 215r21 216r33
+101f7 Reduced_X{float} 103r24 195b7 215m7 216m7 216r20 217m7 217r20 217r32
+102i7 P{integer} 196b7 201m7 204m10 207r25 208m10 208r15 211r25 212m10 212r15
+. 215r35 215r56 216r47
+105V13 Reduce_1_16{float} 105>26 106r28 108b13 698s17 702s17 706s17 709s17
+105f26 X{float} 106r24 109r27
+111K12 Float_Approximations[3|100] 114r8 383r41
+126U14 Reduce_Ln_2 126=30 126<48 224b14 247l8 247t19 542s7
+126f30 X{float} 127r24 224b27 228r46 236m7 236r14 238r10 239m10 239r15 243r10
+. 244m10 244r15
+126i48 N{integer} 224b45 235m7 240m10 240r15 245m10 245r15
+136U14 Reduce_Half_Pi 136=30 136<48 307b14 342l8 342t22 448s7 745s7 827s7
+136f30 X{float} 137r19 138r24 307b30 317r58 320r14 324m10 324r18 327r17 331m10
+. 331r15 331r19 339m10 339r18
+136i48 Q{3|66I12} 307b48 325m10 332m10 340m10
+163U14 Reduce_Half_Pi_Large 163=36 163>51 163<58 164r25 264b14 301l8 301t28
+163f36 X{47F12} 264b36 283m10 283r40 284m10 284r65 285m10 285r65 286m10 286r65
+. 287m10 287r40 297r20 299r35
+163f51 N{47F12} 264b50 273r19 290r42 294r50
+163i58 Q{3|66I12} 264b57 278m7 290r29 291m13 294m13 294r37
+166U14 Split_Veltkamp 166>30 166<41 166<47 253b14 258l8 258t22 281s10
+166f30 X{float} 167r20 253b30 256r15 256r24 256r32 257r15 281r26
+166f41 X_Hi{float} 167r24 253b41 256m7 257r19 281r34
+166f47 X_Lo{float} 167r31 253b47 257m7 281r48
+169V13 Multiply_Add{47F12} 169>27 169>30 169>33 283s15 284s15 284s40 285s15
+. 285s40 286s15 286s40 287s15
+169f27 X{47F12} 169r56
+169f30 Y{47F12} 169r60
+169f33 Z{47F12} 169r64
+182f7 Result{float} 185m7 186r29
+225N7 L1 226r51 227r31 236r23
+226N7 L2 227r36 236r34
+227N7 L3 236r45
+228f7 XN{float} 235r21 236r18 236r29 236r40
+254f7 M{47F12} 256r19 256r28
+265I12 Int_64<long_integer> 276r13 290r21 290r34 294r29 294r42
+267i7 HM{positive} 268r51 269r56 270r61
+268f7 C1{47F12} 269r52 270r52 271r36 283r36 284r61
+269f7 C2{47F12} 270r57 271r41 284r36 285r61
+270f7 C3{47F12} 271r46 285r36 286r61
+271f7 C4{47F12} 286r36 287r36
+273f7 K{47F12} 281r31 289r17 299m10
+274f7 K_Hi{47F12} 281m42 283r30 284r30 285r30 286r30
+275f7 K_Lo{47F12} 281m56 284r55 285r55 286r55 287r30 293r20
+276i7 Tmp{265I12} 290m13 291r28
+308N7 K 311r46 313r54 314r54 315r54 316r34 317r62
+309N7 Bits_N 310r39 312r59
+310N7 Max_N 311r50
+311f7 Max_X{float} 320r18
+312N7 Bits_C 313r57 314r62 315r67
+313f7 C1{float} 314r58 315r58 316r38 324r26 339r26
+314f7 C2{float} 315r63 316r43 324r36 339r36
+315f7 C3{float} 316r48 324r46 339r46
+316f7 C4{float} 324r56 339r56
+317f7 N{float} 324r22 324r32 324r42 324r52 325r24 339r22 339r32 339r42 339r52
+. 340r24
+348K12 Instantiations 351l8 351e22 357r41 415r41 421r45
+349V16*Acos[3|72]{float} 4|572b13 6|357s56
+350V16*Atan2[3|77]{float} 4|605b13 6|415s56 421s60
+367f7 T{47F12} 373r24 373r40 373r44 373r48
+393f7 Y{47F12} 398r10 399r17 400r13 401r22 402r13 403r24 405r22
+394f7 G{47F12} 403r28 403r45 405r32
+395f7 Res{47F12} 399m10 401m10 403m10 405m10 408r27
+443f7 Y{47F12} 448m23 448r23 451r32 453r32
+444i7 Q{3|66I12} 448m26 450r10 456r18 456r32
+445f7 Result{47F12} 451m10 453m10 456r44 456r56
+467f7 Y{47F12} 504r10 505r15
+487N7 Ln_V 505r19
+490N7 V_2 507r19
+493N7 V_2_1 509r21
+496N7 Y_Bar 504r15
+500f7 W{47F12} 505m10 506r20
+501f7 Z{47F12} 506m10 507m10 507r15 507r25 509r17 509r29 512m10 513r18 513r28
+525i7 N{integer} 542m23 544r32
+526f7 Y{47F12} 534r15 538r14 539r21 542m20 542r20 543r24
+527f7 R{47F12} 543m7 544r29
+529f7 Ymax{float} 538r18
+556i7 N{integer} 571m7 572r23 574r35
+557f7 Y{47F12} 563r15 567r14 568r21 572m7 572r12 573r25
+558f7 R{47F12} 573m7 574r32
+560f7 Result{47F12} 574m7 576r10 576r20 579r17
+591i7 Exponent_X{integer} 592r44 593r56
+592f7 XN{47F12} 613m10 613r16 618r18 618r38
+593f7 Mantissa_X{47F12} 612r13 614m10 614r24 617r29
+594i7 HM_F{integer} 595r63
+595f7 L1{47F12} 596r48 618r43
+596f7 L2{47F12} 618r23
+597f7 Result{47F12} 617m7 618m7 618r28 620r14
+663U17 Pow_Special_Cases[3|81] 4|680b14 6|681s7
+665N7 One_Over_Sixteen 714r24
+667i7 M{integer} 694r19
+668f7 G{47F12} 689r22
+669f7 Y{47F12} 698r30 699r17 701r22
+670f7 Z{47F12} 689m25 693r34 727m10 728r34
+671i7 P{integer} 689m28 694r28
+673f7 U2{47F12} 693m10 701r17
+673f11 U1{47F12} 694m10 701r26 705r22
+673f15 Y1{47F12} 698m10 699r21 705r27
+673f19 Y2{47F12} 699m10 701r31
+673f23 W1{47F12} 702m10 703r21 705r17 706m10 707r27 710r34
+673f27 W2{47F12} 703m10 707m10 707r17 709r30 711m10 711r17 713r13 714m13
+. 714r19 727r28
+673f31 W{47F12} 701m10 702r30 703r17 705m10 706r30 707r23 709m10 710r39 711r22
+674i7 MM{integer} 724m10 725r21 728r41
+674i11 PP{integer} 725m10 728r37
+674i15 IW1{integer} 710m10 715m13 715r24 718r13 724r25 725r26
+674i20 I{integer} 719m13 721m13 724r38
+675b7 Is_Special{boolean} 681m39 683r10
+676f7 Special_Result{47F12} 681m51 684r17
+740f7 Y{47F12} 745m23 745r23 747r50 747r70
+741i7 Q{3|66I12} 745m26 747r21 749r41
+742f7 Result{47F12} 747m7 749r54 749r66
+760f7 Sign{47F12} 807r17 811r17
+761f7 Y{47F12} 798r10 802r10 803r15 810r20
+781N7 Ln_V 803r19
+784N7 V_2 805r19
+787N7 V_2_1 807r29
+790N7 Y_Bar 802r15
+794f7 W{47F12} 803m10 804r20
+795f7 Z{47F12} 804m10 805m10 805r15 805r25 807r25 807r37 810m10 811r26 811r36
+823f7 Y{47F12} 827m23 827r23 833r29 836r29
+824i7 N{integer} 827m26 832r10
+848f7 Y{47F12} 854r10 857r13 858r47 860r36
+849N7 Xbig 854r14
+850N7 LN_3_2 857r17
+851f7 Result{47F12} 855m10 858m13 860m13 864r27
+X 7 numerics.ads
+16K9*Numerics 6|43w6 43r20 7|32e13
+21N4*Pi 6|297r33 297r46 308r34
+

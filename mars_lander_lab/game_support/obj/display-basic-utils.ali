@@ -1,0 +1,167 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A -gnat12
+A -g
+A -gnatQ
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U display.basic.utils%b	display-basic-utils.adb	0ef41a26 NE OO PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W display.basic%s	display-basic.adb	display-basic.ali
+Z interfaces%s		interfac.ads		interfac.ali
+W sdl_pixels_h%s	sdl_pixels_h.ads	sdl_pixels_h.ali
+W system%s		system.ads		system.ali
+W system.address_to_access_conversions%s
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+U display.basic.utils%s	display-basic-utils.ads	be4da9cd BN EE OO PK
+W display.basic%s	display-basic.adb	display-basic.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.extensions%s  i-cexten.ads	i-cexten.ali
+W sdl_stdinc_h%s	sdl_stdinc_h.ads	sdl_stdinc_h.ali
+W sdl_surface_h%s	sdl_surface_h.ads	sdl_surface_h.ali
+W sdl_video_h%s		sdl_video_h.ads		sdl_video_h.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D display.ads		20200122131044 3a88167c display%s
+D display-basic.ads	20200122131044 66d43323 display.basic%s
+D display-basic-utils.ads  20200122131046 67cd8ba0 display.basic.utils%s
+D display-basic-utils.adb  20200122131046 b325a43d display.basic.utils%b
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-c.ads		20180524051736 5421119b interfaces.c%s
+D i-cexten.ads		20180524051736 47f3eec4 interfaces.c.extensions%s
+D i-cstrin.ads		20180524051736 341d0ddf interfaces.c.strings%s
+D sdl_blendmode_h.ads	20200122131052 e308a3b6 sdl_blendmode_h%s
+D sdl_pixels_h.ads	20200122131052 89492fa8 sdl_pixels_h%s
+D sdl_rect_h.ads	20200122131054 5db03fa9 sdl_rect_h%s
+D sdl_rwops_h.ads	20200122131052 d60b2061 sdl_rwops_h%s
+D sdl_stdinc_h.ads	20200122131052 76b5d89f sdl_stdinc_h%s
+D sdl_surface_h.ads	20200122131054 da149c96 sdl_surface_h%s
+D sdl_video_h.ads	20200122131054 0027aa18 sdl_video_h%s
+D stdarg_h.ads		20200122131054 db698406 stdarg_h%s
+D stddef_h.ads		20200122131052 f49cc756 stddef_h%s
+D stdint_h.ads		20200122131052 376ae00b stdint_h%s
+D system.ads		20180524051738 32a08138 system%s
+D s-atacco.ads		20180524051738 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20180524051736 ed88f8fb system.storage_elements%b
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+X 4 display.ads
+23K9*Display 59e12 6|7r9 42r5 7|6r14 128r5
+25M9*Color_Component_T
+27R9*RGBA_T 32e15 6|11r36 14r49 7|15r36 27r49
+28m7*R{25M9} 7|18r41 48r46
+29m7*G{25M9} 7|19r41 49r46
+30m7*B{25M9} 7|20r41 50r46
+31m7*A{25M9} 7|21r41 51r46
+X 5 display-basic.ads
+20K17*Basic 4|23k9 5|363e18 6|7r17 42r13 7|6r22 128r13
+29X4*Too_Many_Canvas 7|88r16
+31I9*Canvas_ID<359I9> 6|26r40 27r35 28r34 31r65 32r42 33r42 37r41 7|84r65
+. 85r20 91r21 99r42 104r42 109r35 115r34 120r40
+46R9*Screen_Point 48e14 6|23r16 27r55 28r52 7|109r55 115r52
+359I9 Canvas_ID_Range<short_integer>
+X 6 display-basic-utils.ads
+7K23*Utils 5|20k17 6|37E9 42l19 42e24 7|6b28 128l19 128t24
+10V13*RGBA_To_Uint32{16|175M12} 10^28 11>28 7|14b13 23l8 23t22
+10p28 Screen(17|76R9) 7|14b28 17r26
+11r28 Color{4|27R9} 7|15b28 18r35 19r35 20r35 21r35
+13U14*Put_Pixel_Slow 13^30 14>25 14>28 14>41 7|26b14 53l8 53t22
+13p30 Screen(17|76R9) 7|26b30 32r22 33r30 42r42 43r39 44r37 47r25
+14i25 X{integer} 7|27b25 32r9 32r40 42r54
+14i28 Y{integer} 7|27b28 33r17 33r48 42r29
+14r41 Color{4|27R9} 7|27b41 48r40 49r40 50r40 51r40
+16U14*Put_Pixel 16^25 17>25 17>28 17>41 7|55b14 77l8 77t17
+16p25 Screen(17|76R9) 7|55b25 61r22 62r30 71r42 72r39 73r37
+17i25 X{integer} 7|56b25 61r9 61r40 71r54
+17i28 Y{integer} 7|56b28 62r17 62r48 71r29
+17m41 Color{16|175M12} 7|56b41 75r54
+20R9*T_Internal_Canvas 24e14 33r60 37r55 7|92r38 104r60
+21p7*Surface(17|76R9) 7|92m57 101m32
+22f7*Zoom_Factor{float} 7|93m57 123m31
+23r7*Center{5|46R9} 7|94m57 112m31 117r38
+26U14*Set_Zoom_Factor 26>31 26>51 7|120b14 124l8 124t23
+26i31 Canvas{5|31I9} 7|120b31 123r23
+26f51 ZF{float} 7|120b51 123r46
+27U14*Set_Center 27>26 27>46 7|109b14 113l8 113t18
+27i26 Canvas{5|31I9} 7|109b26 112r23
+27r46 Center{5|46R9} 7|109b46 112r41
+28V13*Get_Center{5|46R9} 28>25 7|115b13 118l8 118t18
+28i25 Canvas{5|31I9} 7|115b25 117r30
+31V13*Register_SDL_Surface{5|31I9} 31^34 7|84b13 97l8 97t28
+31p34 S(17|76R9) 7|84b34 92r72
+32U14*Update_SDL_Surface 32>33 32^53 7|99b14 102l8 102t26
+32i33 Canvas{5|31I9} 7|99b33 101r24
+32p53 S(17|76R9) 7|99b53 101r43
+33V13*Get_Internal_Canvas{20R9} 33>33 7|104b13 107l8 107t27
+33i33 Canvas{5|31I9} 7|104b33 106r31
+37A9 Internal_Canvas_Array(20R9)<5|31I9> 39r22
+39a4 Internal_Canvas{37A9} 7|87r22 91r39 92m7 101m7 106r14 112m7 117r14 123m7
+X 7 display-basic-utils.adb
+11K12 Address_To_Pixel[23|39] 46r10 75r10
+41i10 Offset{27|54I9} 44r53
+44m10 Pixels{22|67M9} 46r39
+70i10 Offset{27|54I9} 73r53
+73m10 Pixels{22|67M9} 75r39
+82i4 Nb_Canvas{integer} 87r10 91r64 95m7 95r20
+85i7 Current_Id{5|31I9} 91m7 92r23 96r14
+X 8 interfac.ads
+38K9*Interfaces 6|2r6 2r24 3r6 3r35 8|184e15
+X 9 i-c.ads
+18K20*C 6|2w17 2r35 3r17 3r46 9|230e17
+35I9*int<integer>
+43M9*unsigned
+47M9*unsigned_char 7|18r20 19r20 20r20 21r20 48r25 49r25 50r25 51r25
+X 10 i-cexten.ads
+37K22*Extensions 6|3w19 3r48 10|468e28
+X 13 sdl_pixels_h.ads
+8K9*SDL_pixels_h 7|4w6 4r24 13|381e17
+193m7*BytesPerPixel{16|151M12} 7|43r57 72r57
+334V13*SDL_MapRGBA{16|175M12} 7|17s13 47s12
+X 16 sdl_stdinc_h.ads
+11K9*SDL_stdinc_h 6|4w6 4r24 7|12r44 16|684e17
+175M12*Uint32{21|115M12} 6|11r51 17r49 7|12r57 15r51 56r49
+X 17 sdl_surface_h.ads
+12K9*SDL_surface_h 6|5w6 5r25 17|667e18
+76R9*SDL_Surface 6|10r44 13r46 16r41 21r24 31r45 32r64 7|14r44 26r46 55r41
+. 84r45 99r64 17|89e14
+78p7*format 7|17r33 43r46 47r32 72r46
+79i7*w{9|35I9} 7|32r29 42r49 61r29 71r49
+80i7*h{9|35I9} 7|33r37 62r37
+82m7*pixels{22|67M9} 7|44r44 73r44
+X 18 sdl_video_h.ads
+11K9*SDL_video_h 6|1w6 1r23 18|1520e16
+X 21 stdint_h.ads
+115M12*uint32_t{9|43M9}
+X 22 system.ads
+37K9*System 7|1w6 1r18 2r6 3r6 12r6 40r14 44r19 69r14 73r19 22|200e11
+67M9*Address 7|44r26 73r26
+X 23 s-atacco.ads
+39k16*Address_To_Access_Conversions 7|3w13 12r13 23|63e41
+47P9*Object_Pointer(9|43M9)
+57V13*To_Pointer{47P9[7|11]} 7|46s27[11] 75s27[11]
+X 27 s-stoele.ads
+42K16*Storage_Elements 7|2w13 40r21 69r21 27|117e28
+54I9*Storage_Offset<long_long_integer> 7|41r19 42r12 70r19 71r12
+76V14*"+"{22|67M9} 7|44s51 73s51
+

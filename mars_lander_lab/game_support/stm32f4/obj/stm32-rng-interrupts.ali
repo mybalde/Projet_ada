@@ -1,0 +1,146 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A -g
+A -gnatwa
+A -gnatQ
+A -gnatw.X
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_PROTECTED_TYPES
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_PROTECTED_ENTRIES=1
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U stm32.rng.interrupts%b  stm32-rng-interrupts.adb  1274b24a OO PF PK IU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.interrupts%s	a-interr.adb		a-interr.ali
+W ada.interrupts.names%s  a-intnam.ads		a-intnam.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W stm32.rng%s		stm32-rng.adb		stm32-rng.ali
+Z system%s		system.ads		system.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+
+U stm32.rng.interrupts%s  stm32-rng-interrupts.ads  1057416e EE NE OO PK IU
+W stm32.rng%s		stm32-rng.adb		stm32-rng.ali
+
+D ada.ads		20180525052300 76789da1 ada%s
+D a-except.ads		20180525052301 291912d5 ada.exceptions%s
+D a-finali.ads		20180525052301 bf4f806b ada.finalization%s
+D a-interr.ads		20180525052302 bdf68b51 ada.interrupts%s
+D a-intnam.ads		20180525052302 778581ca ada.interrupts.names%s
+D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
+D a-tags.ads		20180525052302 491b781d ada.tags%s
+D a-taside.ads		20180525052302 c3e0cda8 ada.task_identification%s
+D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180525052300 5ab55268 interfaces%s
+D i-c.ads		20180525052259 5421119b interfaces.c%s
+D stm32.ads		20190201104611 a457c21a stm32%s
+D stm32-rng.ads		20190130140724 e3005cde stm32.rng%s
+D stm32-rng-interrupts.ads  20190130140724 f3571db0 stm32.rng.interrupts%s
+D stm32-rng-interrupts.adb  20190321141125 96a62e30 stm32.rng.interrupts%b
+D stm32_hal.ads		20190201104611 53e550ba stm32_hal%s
+D system.ads		20180525052301 4635ec04 system%s
+D s-atacco.ads		20180525052301 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20180525052301 54135002 system.exception_table%s
+D s-finroo.ads		20180525052301 4ff27390 system.finalization_root%s
+D s-interr.ads		20180525052302 269c22db system.interrupts%s
+D s-linux.ads		20180525052302 2fda6ad1 system.linux%s
+D s-memory.ads		20180525052301 597d6634 system.memory%s
+D s-multip.ads		20180525052259 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20180525174850 0dad428b system.os_constants%s
+D s-osinte.ads		20180525052302 aeca802d system.os_interface%s
+D s-parame.ads		20180525052302 48ec542b system.parameters%s
+D s-secsta.ads		20180525052301 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180525052300 a7318a92 system.soft_links%s
+D s-stache.ads		20180525052302 a37c21ec system.stack_checking%s
+D s-stausa.ads		20180525052301 017a0a05 system.stack_usage%s
+D s-stalib.ads		20180525052301 09bd3940 system.standard_library%s
+D s-stalib.adb		20180525052259 f2fe2716 system.standard_library%b
+D s-stoele.ads		20180525052302 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20180525052302 2b3f8252 system.task_info%s
+D s-taspri.ads		20180525052302 f40ac08d system.task_primitives%s
+D s-taskin.ads		20180525052302 1d8c1ccb system.tasking%s
+D s-taprob.ads		20180525052302 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20180525052302 60ad3dae system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20180525052302 5f548bb3 system.tasking.protected_objects.operations%s
+D s-traent.ads		20180525052300 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180525052301 34867c83 system.unsigned_types%s
+X 1 ada.ads
+16K9*Ada 20e8 15|1r6
+X 4 a-interr.ads
+40K13*Interrupts 100e19 15|1r10
+X 5 a-intnam.ads
+48K24*Names 163e25 15|1w21
+X 10 interfac.ads
+74M9*Unsigned_32
+X 12 stm32.ads
+39K9*STM32 48e10 14|7r9 19r5 15|3r14 133r5
+X 13 stm32-rng.ads
+7K15*RNG 12|39k9 13|37e14 14|7r15 19r11 15|3r20 133r11
+9U14*Enable_RNG 15|58s10 115s7
+11U14*Disable_RNG 15|91s19
+13U14*Reset_RNG 15|73s13
+15U14*Enable_RNG_Clock 15|113s7
+19U14*Enable_RNG_Interrupt 15|114s7
+23V13*RNG_Interrupt_Enabled{boolean} 14|10s14
+25V13*RNG_Data{16|97M9} 15|84s24
+27V13*RNG_Data_Ready{boolean} 15|83s13
+29V13*RNG_Seed_Error_Status{boolean} 15|68s13
+31V13*RNG_Clock_Error_Status{boolean} 15|76s13
+33U14*Clear_RNG_Seed_Error_Status 15|69s13
+35U14*Clear_RNG_Clock_Error_Status 15|80s13
+X 14 stm32-rng-interrupts.ads
+7K19*Interrupts 13|7k15 14|19l15 19e25 15|3b24 133l15 133t25
+9U14*Initialize_RNG 15|110b14 120l8 120t22
+15V13*Random{16|97M9} 15|126b13 131l8 131t14
+X 15 stm32-rng-interrupts.adb
+5A9 Buffer_Content(16|97M9)<integer> 8r17
+7R9 Ring_Buffer 11e14 23r24
+8a7*Content{5A9} 46r41 49r26 88r48 94r63 95m26
+9i7*Head{integer} 54r34 88r27 94m26 94r42 95r42
+10i7*Tail{integer} 46r20 50m17 54r20 88r72
+17w14 Receiver 38b19 104l8 104t16 119r7 129r7
+19Y13 Get_Random_32 19<28 44b13 59l11 59t24 119s16 129s16
+19m28 Value{16|97M9} 49m10
+22m7 Last{16|97M9} 86r27 98r19
+23r7 Buffer{7R9} 46r13 46r34 49r19 50r10 54r13 54r27 88r20 88r41 88r65 94r19
+. 94r35 94r56 95r19 95r35
+24b7 Data_Available{boolean} 44r53 55r13 97r19
+26U17 Interrupt_Handler 65b17 102l11 102t28
+44m28 Value{16|97M9}
+45i10 Next{integer} 49r35 50r25
+66m10 Current{16|97M9} 84m13 86r16 95r51 98r27
+111m7 Discard{16|97M9} 119m31
+127m7 Result{16|97M9} 129m31 130r14
+X 16 stm32_hal.ads
+97M9*UInt32<10|74M9> 14|15r27 15|5r55 19r40 22r24 44r40 66r20 111r17 126r27
+. 127r16
+X 17 system.ads
+67M9*Address
+X 23 s-memory.ads
+53V13*Alloc{17|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{17|67M9} 105i<c,__gnat_realloc>22
+X 31 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 33 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+

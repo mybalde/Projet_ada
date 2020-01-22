@@ -1,0 +1,187 @@
+V "GNAT Lib v2018"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sdl_joystick_h%s	sdl_joystick_h.ads	d4dcb331 NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W sdl_stdinc_h%s	sdl_stdinc_h.ads	sdl_stdinc_h.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-c.ads		20180524051736 5421119b interfaces.c%s
+D i-cexten.ads		20180524051736 47f3eec4 interfaces.c.extensions%s
+D i-cstrin.ads		20180524051736 341d0ddf interfaces.c.strings%s
+D sdl_joystick_h.ads	20200122131052 c25577ea sdl_joystick_h%s
+D sdl_stdinc_h.ads	20200122131052 76b5d89f sdl_stdinc_h%s
+D stdarg_h.ads		20200122131054 db698406 stdarg_h%s
+D stddef_h.ads		20200122131052 f49cc756 stddef_h%s
+D stdint_h.ads		20200122131052 376ae00b stdint_h%s
+D system.ads		20180524051738 32a08138 system%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+X 3 interfac.ads
+38K9*Interfaces 184e15 7|4r6 4r24 6r6 154r66 242r70 299r17 307r54
+X 4 i-c.ads
+18K20*C 230e17 7|4w17 4r35 6r17 154r77 242r81 299r28 307r65
+35I9*int<integer> 7|114r38 115r42 116r40 117r38 118r41 119r39 120r40 121r38
+. 145r37 154r54 162r62 162r74 170r55 179r57 188r58 197r65 205r55 214r61 227r46
+. 251r80 300r16 328r73 338r74 345r73 352r76 375r45 375r57 386r73 401r14 428r71
+. 441r14 442r19 443r19 443r31 452r77 471r49
+36I9*short<short_integer>
+43M9*unsigned
+44M9*unsigned_short
+47M9*unsigned_char
+X 6 i-cstrin.ads
+36K22*Strings 106e25 7|6w19 154r79 242r83 299r30 307r67
+47P9*chars_ptr 7|154r87 242r91 299r38 307r75
+X 7 sdl_joystick_h.ads
+8K9*SDL_joystick_h 490l5 490e19
+10N4*SDL_JOYSTICK_AXIS_MAX
+11N4*SDL_JOYSTICK_AXIS_MIN
+13N4*SDL_HAT_CENTERED
+14N4*SDL_HAT_UP
+15N4*SDL_HAT_RIGHT
+16N4*SDL_HAT_DOWN
+17N4*SDL_HAT_LEFT
+74R9*u_SDL_Joystick 76r28
+76R12*SDL_Joystick{74R9} 227r65 234r79 242r49 251r59 258r52 266r54 274r55
+. 282r62 289r52 314r56 321r55 328r52 338r53 345r52 352r55 386r52 400r25 428r51
+. 440r25 452r54 468r25 478r51 485r62
+79A9*SDL_JoystickGUID_data_array(8|151M12)<integer> 81r22
+80R9*SDL_JoystickGUID 82e14 83r39 170r67 258r73 298r14 307r93
+81a7*data{79A9}
+95I12*SDL_JoystickID{8|169I12} 214r73 234r49 321r76
+97E9*SDL_JoystickType 107e34 108r26 205r67 289r73
+98n7*SDL_JOYSTICK_TYPE_UNKNOWN{97E9}
+99n7*SDL_JOYSTICK_TYPE_GAMECONTROLLER{97E9}
+100n7*SDL_JOYSTICK_TYPE_WHEEL{97E9}
+101n7*SDL_JOYSTICK_TYPE_ARCADE_STICK{97E9}
+102n7*SDL_JOYSTICK_TYPE_FLIGHT_STICK{97E9}
+103n7*SDL_JOYSTICK_TYPE_DANCE_PAD{97E9}
+104n7*SDL_JOYSTICK_TYPE_GUITAR{97E9}
+105n7*SDL_JOYSTICK_TYPE_DRUM_KIT{97E9}
+106n7*SDL_JOYSTICK_TYPE_ARCADE_PAD{97E9}
+107n7*SDL_JOYSTICK_TYPE_THROTTLE{97E9}
+114I12*SDL_JoystickPowerLevel{4|35I9} 485r83
+115i4*SDL_JOYSTICK_POWER_UNKNOWN{4|35I9}
+116i4*SDL_JOYSTICK_POWER_EMPTY{4|35I9}
+117i4*SDL_JOYSTICK_POWER_LOW{4|35I9}
+118i4*SDL_JOYSTICK_POWER_MEDIUM{4|35I9}
+119i4*SDL_JOYSTICK_POWER_FULL{4|35I9}
+120i4*SDL_JOYSTICK_POWER_WIRED{4|35I9}
+121i4*SDL_JOYSTICK_POWER_MAX{4|35I9}
+135U14*SDL_LockJoysticks 136b<c,SDL_LockJoysticks>22
+138U14*SDL_UnlockJoysticks 139b<c,SDL_UnlockJoysticks>22
+145V13*SDL_NumJoysticks{4|35I9} 146b<c,SDL_NumJoysticks>22
+154V13*SDL_JoystickNameForIndex{6|47P9} 154>39 155b<c,SDL_JoystickNameForIndex>22
+154i39 device_index{4|35I9}
+162V13*SDL_JoystickGetDevicePlayerIndex{4|35I9} 162>47 163b<c,SDL_JoystickGetDevicePlayerIndex>22
+162i47 device_index{4|35I9}
+170V13*SDL_JoystickGetDeviceGUID{80R9} 170>40 171b<c,SDL_JoystickGetDeviceGUID>22
+170i40 device_index{4|35I9}
+179V13*SDL_JoystickGetDeviceVendor{8|163M12} 179>42 180b<c,SDL_JoystickGetDeviceVendor>22
+179i42 device_index{4|35I9}
+188V13*SDL_JoystickGetDeviceProduct{8|163M12} 188>43 189b<c,SDL_JoystickGetDeviceProduct>22
+188i43 device_index{4|35I9}
+197V13*SDL_JoystickGetDeviceProductVersion{8|163M12} 197>50 198b<c,SDL_JoystickGetDeviceProductVersion>22
+197i50 device_index{4|35I9}
+205V13*SDL_JoystickGetDeviceType{97E9} 205>40 206b<c,SDL_JoystickGetDeviceType>22
+205i40 device_index{4|35I9}
+214V13*SDL_JoystickGetDeviceInstanceID{95I12} 214>46 215b<c,SDL_JoystickGetDeviceInstanceID>22
+214i46 device_index{4|35I9}
+227V13*SDL_JoystickOpen(76R12) 227>31 228b<c,SDL_JoystickOpen>22
+227i31 device_index{4|35I9}
+234V13*SDL_JoystickFromInstanceID(76R12) 234>41 235b<c,SDL_JoystickFromInstanceID>22
+234i41 joyid{95I12}
+242V13*SDL_JoystickName{6|47P9} 242^31 243b<c,SDL_JoystickName>22
+242p31 joystick(76R12)
+251V13*SDL_JoystickGetPlayerIndex{4|35I9} 251^41 252b<c,SDL_JoystickGetPlayerIndex>22
+251p41 joystick(76R12)
+258V13*SDL_JoystickGetGUID{80R9} 258^34 259b<c,SDL_JoystickGetGUID>22
+258p34 joystick(76R12)
+266V13*SDL_JoystickGetVendor{8|163M12} 266^36 267b<c,SDL_JoystickGetVendor>22
+266p36 joystick(76R12)
+274V13*SDL_JoystickGetProduct{8|163M12} 274^37 275b<c,SDL_JoystickGetProduct>22
+274p37 joystick(76R12)
+282V13*SDL_JoystickGetProductVersion{8|163M12} 282^44 283b<c,SDL_JoystickGetProductVersion>22
+282p44 joystick(76R12)
+289V13*SDL_JoystickGetType{97E9} 289^34 290b<c,SDL_JoystickGetType>22
+289p34 joystick(76R12)
+297U14*SDL_JoystickGetGUIDString 298>7 299>7 300>7 301b<c,SDL_JoystickGetGUIDString>22
+298r7 guid{80R9}
+299p7 pszGUID{6|47P9}
+300i7 cbGUID{4|35I9}
+307V13*SDL_JoystickGetGUIDFromString{80R9} 307>44 308b<c,SDL_JoystickGetGUIDFromString>22
+307p44 pchGUID{6|47P9}
+314V13*SDL_JoystickGetAttached{8|136E9} 314^38 315b<c,SDL_JoystickGetAttached>22
+314p38 joystick(76R12)
+321V13*SDL_JoystickInstanceID{95I12} 321^37 322b<c,SDL_JoystickInstanceID>22
+321p37 joystick(76R12)
+328V13*SDL_JoystickNumAxes{4|35I9} 328^34 329b<c,SDL_JoystickNumAxes>22
+328p34 joystick(76R12)
+338V13*SDL_JoystickNumBalls{4|35I9} 338^35 339b<c,SDL_JoystickNumBalls>22
+338p35 joystick(76R12)
+345V13*SDL_JoystickNumHats{4|35I9} 345^34 346b<c,SDL_JoystickNumHats>22
+345p34 joystick(76R12)
+352V13*SDL_JoystickNumButtons{4|35I9} 352^37 353b<c,SDL_JoystickNumButtons>22
+352p37 joystick(76R12)
+362U14*SDL_JoystickUpdate 363b<c,SDL_JoystickUpdate>22
+375V13*SDL_JoystickEventState{4|35I9} 375>37 376b<c,SDL_JoystickEventState>22
+375i37 state{4|35I9}
+386V13*SDL_JoystickGetAxis{8|157I12} 386^34 386>66 387b<c,SDL_JoystickGetAxis>22
+386p34 joystick(76R12)
+386i66 axis{4|35I9}
+399V13*SDL_JoystickGetAxisInitialState{8|136E9} 400^7 401>7 402^7 403b<c,SDL_JoystickGetAxisInitialState>22
+400p7 joystick(76R12)
+401i7 axis{4|35I9}
+402p7 state(8|157I12)
+428V13*SDL_JoystickGetHat{8|151M12} 428^33 428>65 429b<c,SDL_JoystickGetHat>22
+428p33 joystick(76R12)
+428i65 hat{4|35I9}
+439V13*SDL_JoystickGetBall{4|35I9} 440^7 441>7 442^7 443^7 444b<c,SDL_JoystickGetBall>22
+440p7 joystick(76R12)
+441i7 ball{4|35I9}
+442p7 dx(4|35I9)
+443p7 dy(4|35I9)
+452V13*SDL_JoystickGetButton{8|151M12} 452^36 452>68 453b<c,SDL_JoystickGetButton>22
+452p36 joystick(76R12)
+452i68 button{4|35I9}
+467V13*SDL_JoystickRumble{4|35I9} 468^7 469>7 470>7 471>7 472b<c,SDL_JoystickRumble>22
+468p7 joystick(76R12)
+469m7 low_frequency_rumble{8|163M12}
+470m7 high_frequency_rumble{8|163M12}
+471m7 duration_ms{8|175M12}
+478U14*SDL_JoystickClose 478^33 479b<c,SDL_JoystickClose>22
+478p33 joystick(76R12)
+485V13*SDL_JoystickCurrentPowerLevel{114I12} 485^44 486b<c,SDL_JoystickCurrentPowerLevel>22
+485p44 joystick(76R12)
+X 8 sdl_stdinc_h.ads
+11K9*SDL_stdinc_h 7|5w6 79r67 95r30 179r69 188r70 197r77 266r75 274r76 282r83
+. 314r77 386r85 402r22 402r50 428r83 452r89 469r30 470r31 471r21 8|684e17
+136E9*SDL_bool 7|314r90 402r63 8|138e16
+151M12*Uint8{11|107M12} 7|79r80 428r96 452r102
+157I12*Sint16{11|109I12} 7|386r98 402r35
+163M12*Uint16{11|111M12} 7|179r82 188r83 197r90 266r88 274r89 282r96 469r43
+. 470r44
+169I12*Sint32{11|113I12} 7|95r43
+175M12*Uint32{11|115M12} 7|471r34
+X 11 stdint_h.ads
+107M12*uint8_t{4|47M9}
+109I12*int16_t{4|36I9}
+111M12*uint16_t{4|44M9}
+113I12*int32_t{4|35I9}
+115M12*uint32_t{4|43M9}
+

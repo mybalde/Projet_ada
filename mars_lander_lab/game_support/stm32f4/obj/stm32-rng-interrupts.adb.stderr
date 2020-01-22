@@ -1,0 +1,2 @@
+stm32-rng-interrupts.adb:1:20: warning: unit "Ada.Interrupts.Names" is not referenced
+stm32-rng-interrupts.adb:26:17: warning: procedure "Interrupt_Handler" is not referenced

@@ -1,0 +1,81 @@
+with Ada.Real_Time; use Ada.Real_Time;
+
+with Display;       use Display;
+with Display.Basic; use Display.Basic;
+with Display.Image; use Display.Image;
+with Ada.Numerics.Elementary_Functions; use Ada.Numerics.Elementary_Functions;
+with Ada.Text_IO; use Ada.Text_IO;
+
+procedure Main is
+   --question 1: declaration de variable
+   X: Float:=0.0;
+   Y: Float:=0.0;
+   Pi:Float:=3.141592;
+   DIRECTION: Float := 2.0;
+   SPEED: Float;
+   --  declare a variable Next of type Time to store the Next step time
+   Next : Time;
+
+   --  declare a constant Period of 40 milliseconds of type Time_Span defining
+   --  the loop period
+   Period : constant Time_Span := Milliseconds (10);
+
+   --  reference to the application window
+   Window : Window_ID;
+
+   --  reference to the graphical canvas associated with the application window
+   Canvas : Canvas_ID;
+
+   newX : FLOAT:= 300.0;
+   newY : FLOAT:= 300.0;
+
+   Width : constant := 800;
+   Height : constant := 800;
+begin
+
+   Window :=
+     Create_Window (Width, Height, "Mars Lander");
+
+   --  Retrieve the graphical canvas from the window
+   Canvas := Get_Canvas (Window);
+
+
+   --  initialize the Next step time begin the current time (Clock) + the period
+   Next := Clock + Period;
+
+   while not Is_Killed loop
+
+      --Calculate speed and direction
+      Y := Cos(DIRECTION);
+      X := -Sin(DIRECTION);
+      speed := 1.3;
+      newX := newX + (X * Speed);
+      newY := newY + (Y * SPEED);
+      ------------------------------
+
+      --Listener
+      if(Get_Key_Status(SDLK_DOWN)) then
+         null;
+      end if;
+      if(Get_Key_Status(SDLK_UP)) then
+         DIRECTION := DIRECTION + (1.0*Pi/180.0);
+      end if;
+            if(Get_Key_Status(SDLK_LEFT)) then
+         null;
+      end if;
+            if(Get_Key_Status(SDLK_RIGHT)) then
+         null;
+      end if;
+
+      --  update the screen using procedure Swap_Buffers
+      Swap_Buffers (Window);
+
+     Draw_Rect(Canvas,(newX,newY,0.0),50.0,100.0,DIRECTION, Green);
+      -- wait until Next
+      delay until Next;
+
+      --  update the Next time adding the period for the next step
+      Next := Next + Period;
+
+   end loop;
+end Main;
